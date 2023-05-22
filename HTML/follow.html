@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đang Theo Dõi | Mutil-library</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="../images/logo3.png" type="image/x-icon">
+    <script src="../JS/Jquery.js"></script>  
+</head>
+<body>
+      <div id="header">
+          <div class="header grid1 wide">
+            <div class="navbar">
+              <div class="container-navbar">
+                  <a href="./trangchu.html" class="navbar-brand" title="Mutil-library">
+                      <img src="../images/logo3.png" alt="" class="navbar-brand__img">
+                  </a>
+                  <div class="navbar-nav hide-on-mobile-tablet">
+                      <ul class="nav-list">
+                          <li class="nav-item">
+                              <a class="nav-item__link nav-item__type" onclick="toggle1()">
+                                <i class="fa-solid fa-book"></i>
+                                <span class="nav-item__text">Thể Loại</span>
+                              </a>
+                              <div class="nav-item__type-list">
+                                <div class="grid wide">
+                                  <div class="grid__row-dropdown">
+                                    <div class="grid__column-2-4-dropdown">
+                                        <a href="#" class="dropdown-item">Lịch Sử</a>
+                                    </div>
+                                    <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Tình cảm</a>
+                                    </div>
+                                    <div class="grid__column-2-4-dropdown">
+                                        <a href="#" class="dropdown-item">Sử Thi</a>
+                                    </div>
+                                    <div class="grid__column-2-4-dropdown">
+                                        <a href="#" class="dropdown-item">Viễn Tưởng</a>
+                                    </div>
+                                    <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Trinh Thám</a>
+                                    </div>
+                                    <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Khoa Học</a>
+                                    </div>
+                                    <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Trữ Tình</a>
+                                    </div>
+                                    <div class="grid__column-2-4-dropdown">
+                                        <a href="#" class="dropdown-item">Kinh Dị</a>
+                                    </div>
+                                    <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Tâm Lý</a>
+                                    </div>
+                                    <div class="grid__column-2-4-dropdown">
+                                        <a href="#" class="dropdown-item">Phiêu Lưu</a>
+                                    </div>
+                                    <div class="grid__column-2-4-dropdown">
+                                        <a href="#" class="dropdown-item">Giáo Dục</a>
+                                    </div>
+                                    <div class="grid__column-2-4-dropdown">
+                                        <a href="#" class="dropdown-item">Ngôn Tình</a>
+                                    </div>
+                                    <div class="grid__column-2-4-dropdown">
+                                        <a href="#" class="dropdown-item">Thần Bí</a>
+                                    </div>
+                                    <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Tiểu Thuyết</a>
+                                    </div>
+                                    <div class="grid__column-2-4-dropdown">
+                                        <a href="#" class="dropdown-item">Hành Động</a>
+                                    </div>
+                                  </div>
+                                </div>  
+                              </div>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-item__link nav-item__rank" onclick="toggle2()">
+                              <i class="fa-solid fa-crown"></i>
+                              <span class="nav-item__text">Xếp Hạng</span>
+                            </a>
+                            <div class="nav-item__rank-list">
+                              <div class="grid wide">
+                                <div class="grid__row-dropdown">
+                                  <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                    <a href="#" class="dropdown-item">
+                                    <i class="grid__column-2-4-icon fa-solid fa-eye"></i>Top all</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                    <a href="#" class="dropdown-item">
+                                    <i class="grid__column-2-4-icon fa-solid fa-eye"></i>Top Ngày</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                    <a href="#" class="dropdown-item">
+                                    <i class="grid__column-2-4-icon fa-solid fa-eye"></i>Top Tháng</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                    <a href="#" class="dropdown-item">
+                                    <i class="grid__column-2-4-icon fa-solid fa-heart"></i>Top Theo Dõi</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                    <a href="#" class="dropdown-item">
+                                    <i class="grid__column-2-4-icon fa-solid fa-eye"></i>Top Tuần</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                    <a href="#" class="dropdown-item">
+                                    <i class="grid__column-2-4-icon fa-solid fa-thumbs-up"></i>Yêu Thích</a>
+                                  </div>
+                                </div>
+                              </div>  
+                            </div>
+                          </li>
+                          <li class="nav-item">
+                          <a href="../HTML/search.html" class="nav-item__link">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="nav-item__text">Tìm Kiếm</span>
+                          </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div> 
+              <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Xếp Hạng</a>
+                </li>
+                <li class="header__sort-item">
+                  <a href="" class="header__sort-link">Mới Nhất</a>
+                </li>
+                <li class="header__sort-item header__sort-item--active">
+                  <a href="" class="header__sort-link">Đang Theo Dõi</a>
+                </li>
+                <li class="header__sort-item">
+                  <a href="" class="header__sort-link">Tình Trạng</a>
+                </li>
+              </ul>
+              <label class="nav__bars-btn" for="nav-mobile-input">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+              </label>
+              <input type="checkbox" name="" id="nav-mobile-input">
+              <label  for="nav-mobile-input" class="nav__overlay"></label>
+              <div class="nav__mobile">
+                <div class="nav__mobile-header">
+                  <div class="nav__mobile-profile">
+                    <div class="profile-img nav__mobile-profile-img">
+                      <img src="../images/background.jpg" id="Photo"></img>
+                    </div>
+                    <span class="nav__mobile-profile-name">
+                        Tuyển
+                    </span>
+                  </div>  
+                  <label for="nav-mobile-input" class="nav__mobile-close">
+                    <i class="fa-sharp fa-solid fa-xmark nav__mobile-img"></i>
+                  </label>
+                  
+                </div>
+                <form action="" id="search-box" class="hide-on-tablet">
+                  <button class="search-btn search-btn__mobile"><img src="../images/magnifier1.png" alt=""></button>
+                  <input type="text" class="search-text search-text__mobile" placeholder="Nhập từ khóa" required>
+                </form>
+                <ul class="nav__mobile-list">
+                  <li class="nav__mobile-item">
+                    <a href="trangchu.html" class="nav__mobile-link">
+                      <i class="nav__mobile-link-img fa-sharp fa-solid fa-house"></i> 
+                      Trang Chủ
+                    </a>
+                  </li>
+                  <li class="nav__mobile-item">
+                    <a href="search.html" class="nav__mobile-link">
+                      <i class="nav__mobile-link-img fa-solid fa-magnifying-glass"></i>
+                      Tìm Kiếm
+                    </a>
+                  </li>
+                  <li class="nav__mobile-item">
+                    <a href="follow.html" class="nav__mobile-link">
+                      <i class="nav__mobile-link-img far fa-heart"></i>
+                      Đang Theo Dõi
+                    </a>
+                  </li>
+                  <li class="nav__mobile-item">
+                    <a href="" class="nav__mobile-link">
+                      <i class="nav__mobile-link-img fa-regular fa-circle-question"></i>
+                      Trợ Giúp & Hỗ Trợ
+                    </a>
+                  </li>
+                  <li class="nav__mobile-item">
+                    <a href="index.html" class="nav__mobile-link">
+                      <i class="nav__mobile-link-img fa-solid fa-arrow-right-from-bracket"></i>
+                      Đăng Xuất
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <form action="" id="search-box" class="hide-on-mobile">
+              <button class="search-btn"><img src="../images/magnifier1.png" alt=""></button>
+              <input type="text" class="search-text" placeholder="Nhập để tìm kiếm" required>
+            </form>
+            <div class="profile-dropdown hide-on-mobile-tablet">
+              <div class="profile-dropdown-btn" onclick="toggle()">
+                <div class="profile-img">
+                  <img src="../images/background.jpg" id="Photo"></img>
+                </div>
+                <span>
+                    Tuyển
+                    <i class="fa-solid fa-angle-down"></i>
+                </span>
+              </div>            
+              <ul class="profile-dropdown-list">
+                <li class="profile-dropdown-list-item">
+                  <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="file" id="file">
+                    <label for="file" id="uploadBtn">Hồ Sơ</label>
+                  </a>
+                </li>
+                <li class="profile-dropdown-list-item">
+                  <a href="#">
+                    <i class="fa-regular fa-envelope"></i>
+                    Nhắn Tin
+                  </a>
+                </li>
+                <li class="profile-dropdown-list-item">
+                  <a href="follow.html">
+                    <i class="far fa-heart"></i>
+                    Đang Theo Dõi
+                  </a>
+                </li>
+                <li class="profile-dropdown-list-item">
+                  <a href="#">
+                    <i class="fa-regular fa-circle-question"></i>
+                    Trợ giúp & Hỗ trợ
+                  </a>
+                </li>
+                <hr/>
+                <li class="profile-dropdown-list-item">
+                  <a href="index.html">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    Đăng Xuất
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container container-follow">
+          <div class="grid wide">
+          <div class="row sm-gutter app__content">
+            <div class="col l-2 m-0 c-0">
+              <nav class="category category-follow">
+                <h3 class="category__heading">
+                  Thể Loại
+                </h3>   
+                <ul class="category-list">
+                    <li class="category-item category-item--active">
+                        <a href="" class="category-item__link">Tất cả Thể Loại</a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="category-item__link">Sách Lịch Sử</a>
+                    </li>
+                    <li class="category-item">
+                      <a href="" class="category-item__link">Sách Tình Cảm</a>
+                    </li>
+                    <li class="category-item">
+                      <a href="" class="category-item__link">Sách Kinh Dị</a>
+                    </li>
+                    <li class="category-item">
+                      <a href="" class="category-item__link">Sách Giả Tưởng</a>
+                    </li>
+                    <li class="category-item">
+                      <a href="" class="category-item__link">Tiểu Thuyết</a>
+                    </li>
+                    <li class="category-item">
+                      <a href="" class="category-item__link">Truyện</a>
+                    </li>
+                    <li class="category-item">
+                      <a href="" class="category-item__link">Truyện Ngắn</a>
+                    </li>
+                    <li class="category-item">
+                      <a href="" class="category-item__link">Sách Tâm Lý</a>
+                    </li>
+                    <li class="category-item">
+                      <a href="" class="category-item__link">Sách Thiếu Nhi</a>
+                    </li>
+                    <li class="category-item">
+                      <a href="" class="category-item__link">Sách Khoa Học</a>
+                    </li>
+                    <li class="category-item">
+                      <a href="" class="category-item__link">Sách Trinh Thám</a>
+                    </li>
+                    <li class="category-item">
+                      <a href="" class="category-item__link">Sách Giáo Dục</a>
+                    </li>
+                    <li class="category-item">
+                      <a href="" class="category-item__link">Sách Phiêu Lưu</a>
+                    </li>
+                    <li class="category-item">
+                      <a href="" class="category-item__link">Sách Hành Động</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+            <div class="col l-10 m-12 c-12">
+              <div class="grid__column-10">
+                <div class="title-follow">
+                  <h1 class="title-h1 title-follow__h1">
+                      Sách Đang Theo Dõi
+                  </h1>
+              </div>
+                <div class="home-filter home-filter__follow">
+                    <span class="home-filter__label home-filter__update">Mới Cập Nhật</span>
+                    <span class="home-filter__label home-filter__unread">Chưa Đọc</span>
+                </div>
+              <div class="home-product">
+                  <div class="row sm-gutter">
+                      <div class="col l-2-4  m-3 c-6 ">
+                          <a class="home-product-item" href="#">
+                              <div class="home-product-item__container" >
+                                  <img class="home-product-item__img" src="../images/sach1.jpg" alt="" title="A Court of Mist and Fury">
+                                  <h4 class="home-product-item__name">A Court of Mist and Fury</h4>
+                                  <div class="home-product-item__Publisher">
+                                    Publisher:
+                                    <span class="home-product-item__Publisher-name">Bloomsbury Publishing</span>                                       
+                                </div>
+                                  <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                            <i class="home-product-item__like-icon-empty far fa-heart" aria-hidden="true"></i>
+                                            <i class="home-product-item__like-icon-fill fas fa-heart" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="home-product-item__start--gold fas fa-star"></i>
+                                            <i class="home-product-item__start--gold fas fa-star"></i>
+                                            <i class="home-product-item__start--gold fas fa-star"></i>
+                                            <i class="home-product-item__start--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__viewed">88 Đã Xem</span>
+                                </div>
+                                <div class="home-product-item__origin">
+                                    <span class="home-product-item__author">Sarah J. Maas</span>
+                                    <span class="home-product-item__Language">Tiếng Anh</span>
+                                </div>
+                                <div class="home-product-item__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="col l-2-4  m-3 c-6">
+                        <a class="home-product-item" href="#">
+                            <div class="home-product-item__container" >
+                                <img class="home-product-item__img" src="../images/sach2.jpg" alt="" title="Las Aventuras de Sherlock Holmes">
+                                <h4 class="home-product-item__name">Las Aventuras de Sherlock Holmes</h4>
+                                <div class="home-product-item__Publisher">
+                                  Publisher:
+                                  <span class="home-product-item__Publisher-name">George Newnes</span>                                       
+                              </div>
+                                <div class="home-product-item__action">
+                                      <span class="home-product-item__like home-product-item__like--liked">
+                                          <i class="home-product-item__like-icon-empty far fa-heart" aria-hidden="true"></i>
+                                          <i class="home-product-item__like-icon-fill fas fa-heart" aria-hidden="true"></i>
+                                      </span>
+                                      <div class="home-product-item__rating">
+                                          <i class="home-product-item__start--gold fas fa-star"></i>
+                                          <i class="home-product-item__start--gold fas fa-star"></i>
+                                          <i class="home-product-item__start--gold fas fa-star"></i>
+                                          <i class="home-product-item__start--gold fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                      </div>
+                                      <span class="home-product-item__viewed">1004 Đã Xem</span>
+                              </div>
+                              <div class="home-product-item__origin">
+                                  <span class="home-product-item__author">Arthur Conan Doyle</span>
+                                  <span class="home-product-item__Language">Tiếng Anh</span>
+                              </div>
+                              <div class="home-product-item__favourite">
+                                  <i class="fas fa-check"></i>
+                                  <span>Yêu thích</span>
+                              </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="col l-2-4  m-3 c-6">
+                        <a class="home-product-item" href="#">
+                            <div class="home-product-item__container" >
+                                <img class="home-product-item__img" src="../images/sach3.jpg" alt="" title="Speak">
+                                <h4 class="home-product-item__name">Speak</h4>
+                                <div class="home-product-item__Publisher">
+                                  Publisher:
+                                  <span class="home-product-item__Publisher-name">Hampton-Brown</span>                                       
+                              </div>
+                                <div class="home-product-item__action">
+                                      <span class="home-product-item__like home-product-item__like--liked">
+                                          <i class="home-product-item__like-icon-empty far fa-heart" aria-hidden="true"></i>
+                                          <i class="home-product-item__like-icon-fill fas fa-heart" aria-hidden="true"></i>
+                                      </span>
+                                      <div class="home-product-item__rating">
+                                          <i class="home-product-item__start--gold fas fa-star"></i>
+                                          <i class="home-product-item__start--gold fas fa-star"></i>
+                                          <i class="home-product-item__start--gold fas fa-star"></i>
+                                          <i class="home-product-item__start--gold fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                      </div>
+                                      <span class="home-product-item__viewed">509 Đã Xem</span>
+                              </div>
+                              <div class="home-product-item__origin">
+                                  <span class="home-product-item__author">Laurie Anderson</span>
+                                  <span class="home-product-item__Language">Tiếng Anh</span>
+                              </div>
+                              <div class="home-product-item__favourite">
+                                  <i class="fas fa-check"></i>
+                                  <span>Yêu thích</span>
+                              </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="col l-2-4  m-3 c-6">
+                        <a class="home-product-item" href="#">
+                            <div class="home-product-item__container" >
+                                <img class="home-product-item__img" src="../images/sach5.jpg" alt="" title="All That is Gone">
+                                <h4 class="home-product-item__name">All That is Gone</h4>
+                                <div class="home-product-item__Publisher">
+                                  Publisher:
+                                  <span class="home-product-item__Publisher-name">Penguin Random House India</span>                                       
+                              </div>
+                                <div class="home-product-item__action">
+                                      <span class="home-product-item__like home-product-item__like--liked">
+                                          <i class="home-product-item__like-icon-empty far fa-heart" aria-hidden="true"></i>
+                                          <i class="home-product-item__like-icon-fill fas fa-heart" aria-hidden="true"></i>
+                                      </span>
+                                      <div class="home-product-item__rating">
+                                          <i class="home-product-item__start--gold fas fa-star"></i>
+                                          <i class="home-product-item__start--gold fas fa-star"></i>
+                                          <i class="home-product-item__start--gold fas fa-star"></i>
+                                          <i class="home-product-item__start--gold fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                      </div>
+                                      <span class="home-product-item__viewed">1074 Đã Xem</span>
+                              </div>
+                              <div class="home-product-item__origin">
+                                  <span class="home-product-item__author">Pramoedya Toer</span>
+                                  <span class="home-product-item__Language">Tiếng Anh</span>
+                              </div>
+                              <div class="home-product-item__favourite">
+                                  <i class="fas fa-check"></i>
+                                  <span>Yêu thích</span>
+                              </div>
+                            </div>
+                        </a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+          </div>
+      </div>
+      <!--begin: footer-->
+      <footer class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-2-4 m-4 c-6">
+                    <h3 class="footer__heading">Chăm Sóc khách Hàng</h3>
+                    <ul class="footer-list">
+                      <li class="footer-item">
+                          <a href="" class="footer-item__link">Tư Vấn Khách Hàng</a>
+                      </li>
+                      <li class="footer-item">
+                          <a href="" class="footer-item__link">Hướng Dẫn Mượn Trả</a>
+                      </li>
+                      <li class="footer-item">
+                          <a href="" class="footer-item__link">Hỗ trợ người dùng</a>
+                      </li>
+                    </ul>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                   <h3 class="footer__heading">Giới Thiệu</h3>
+                   <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Giới Thiệu</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Bản Quyền</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Điều Khoản</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                  <h3 class="footer__heading">Multiple-Library</h3>
+                  <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Home</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Tìm Kiếm</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Xếp Hạng</a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="" class="footer-item__link">Thể Loại</a>
+                  </li>
+                  </ul>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                  <h3 class="footer__heading">Theo Dõi</h3>
+                  <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="https://www.facebook.com/profile.php?id=100014728930650" class="footer-item__link">
+                          <i class="footer-item__icon fab fa-facebook"></i>
+                          Facebook
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="https://www.instagram.com/xtuyen.04/" class="footer-item__link">
+                          <i class="footer-item__icon fab fa-instagram"></i>
+                          Instagram
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="https://www.linkedin.com/" class="footer-item__link">
+                          <i class="footer-item__icon fab fa-linkedin"></i>
+                          Linkedin
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col l-2-4 m-8 c-12">
+                  <h3 class="footer__heading">Ủng Hộ Chúng Tôi</h3>
+                  <div class="footer__bank">
+                      <img src="../images/QR.jpg" alt="QR Code" class="footer__bank-qr"> 
+                  </div>
+                </div>
+            </div>
+        </div>
+      </footer>
+      <!--end: footer-->
+    <script src="../JS/app.js"></script>
+</body>
+</html>

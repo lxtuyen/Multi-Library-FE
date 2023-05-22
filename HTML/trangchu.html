@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Multi-Library | Mutil-library</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/lightslider.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../JS/Jquery.js"></script>  
+    <link rel="shortcut icon" href="../images/logo3.png" type="image/x-icon">
+</head>
+<body>
+    <div id="main">
+      <div id="header">
+        <div class="header grid1 wide">
+          <div class="navbar">
+            <div class="container-navbar">
+                <a href="./trangchu.html" class="navbar-brand" title="Mutil-library">
+                    <img src="../images/logo3.png" alt="" class="navbar-brand__img">
+                </a>
+                <div class="navbar-nav hide-on-mobile-tablet">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-item__link nav-item__type" onclick="toggle1()">
+                              <i class="fa-solid fa-book"></i>
+                              <span class="nav-item__text">Thể Loại</span>
+                            </a>
+                            <div class="nav-item__type-list">
+                              <div class="grid wide">
+                                <div class="grid__row-dropdown">
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Lịch Sử</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                     <a href="#" class="dropdown-item">Tình cảm</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Sử Thi</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Viễn Tưởng</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                     <a href="#" class="dropdown-item">Trinh Thám</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                     <a href="#" class="dropdown-item">Khoa Học</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                     <a href="#" class="dropdown-item">Trữ Tình</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Kinh Dị</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                     <a href="#" class="dropdown-item">Tâm Lý</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Phiêu Lưu</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Giáo Dục</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Ngôn Tình</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Thần Bí</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                     <a href="#" class="dropdown-item">Tiểu Thuyết</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Hành Động</a>
+                                  </div>
+                                </div>
+                              </div>  
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-item__link nav-item__rank" onclick="toggle2()">
+                            <i class="fa-solid fa-crown"></i>
+                            <span class="nav-item__text">Xếp Hạng</span>
+                          </a>
+                          <div class="nav-item__rank-list">
+                            <div class="grid wide">
+                              <div class="grid__row-dropdown">
+                                <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                  <a href="#" class="dropdown-item">
+                                  <i class="grid__column-2-4-icon fa-solid fa-eye"></i>Top all</a>
+                                </div>
+                                <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                  <a href="#" class="dropdown-item">
+                                  <i class="grid__column-2-4-icon fa-solid fa-eye"></i>Top Ngày</a>
+                                </div>
+                                <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                  <a href="#" class="dropdown-item">
+                                  <i class="grid__column-2-4-icon fa-solid fa-eye"></i>Top Tháng</a>
+                                </div>
+                                <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                  <a href="#" class="dropdown-item">
+                                  <i class="grid__column-2-4-icon fa-solid fa-heart"></i>Top Theo Dõi</a>
+                                </div>
+                                <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                  <a href="#" class="dropdown-item">
+                                  <i class="grid__column-2-4-icon fa-solid fa-eye"></i>Top Tuần</a>
+                                </div>
+                                <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                  <a href="#" class="dropdown-item">
+                                  <i class="grid__column-2-4-icon fa-solid fa-thumbs-up"></i>Yêu Thích</a>
+                                </div>
+                              </div>
+                            </div>  
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                        <a href="../HTML/search.html" class="nav-item__link">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                          <span class="nav-item__text">Tìm Kiếm</span>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+            <label class="nav__bars-btn" for="nav-mobile-input">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+            <input type="checkbox" name="" id="nav-mobile-input">
+            <label  for="nav-mobile-input" class="nav__overlay"></label>
+            <div class="nav__mobile">
+              <div class="nav__mobile-header">
+                <div class="nav__mobile-profile">
+                  <div class="profile-img nav__mobile-profile-img">
+                    <img src="../images/background.jpg" id="Photo"></img>
+                  </div>
+                  <span class="nav__mobile-profile-name">
+                      Tuyển
+                  </span>
+                </div>  
+                <label for="nav-mobile-input" class="nav__mobile-close">
+                  <i class="fa-sharp fa-solid fa-xmark nav__mobile-img"></i>
+                </label>
+                
+              </div>
+              <form action="" id="search-box" class="hide-on-tablet">
+                <button class="search-btn search-btn__mobile"><img src="../images/magnifier1.png" alt=""></button>
+                <input type="text" class="search-text search-text__mobile" placeholder="Nhập từ khóa" required>
+              </form>
+              <ul class="nav__mobile-list">
+                <li class="nav__mobile-item">
+                  <a href="trangchu.html" class="nav__mobile-link">
+                    <i class="nav__mobile-link-img fa-sharp fa-solid fa-house"></i> 
+                    Trang Chủ
+                  </a>
+                </li>
+                <li class="nav__mobile-item">
+                  <a href="search.html" class="nav__mobile-link">
+                    <i class="nav__mobile-link-img fa-solid fa-magnifying-glass"></i>
+                    Tìm Kiếm
+                  </a>
+                </li>
+                <li class="nav__mobile-item">
+                  <a href="follow.html" class="nav__mobile-link">
+                    <i class="nav__mobile-link-img far fa-heart"></i>
+                    Đang Theo Dõi
+                  </a>
+                </li>
+                <li class="nav__mobile-item">
+                  <a href="" class="nav__mobile-link">
+                    <i class="nav__mobile-link-img fa-regular fa-circle-question"></i>
+                    Trợ Giúp & Hỗ Trợ
+                  </a>
+                </li>
+                <li class="nav__mobile-item">
+                  <a href="index.html" class="nav__mobile-link">
+                    <i class="nav__mobile-link-img fa-solid fa-arrow-right-from-bracket"></i>
+                    Đăng Xuất
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <form action="" id="search-box" class="hide-on-mobile">
+            <button class="search-btn"><img src="../images/magnifier1.png" alt=""></button>
+            <input type="text" class="search-text" placeholder="Nhập từ khóa" required>
+          </form>
+          <div class="profile-dropdown hide-on-mobile-tablet">
+            <div class="profile-dropdown-btn" onclick="toggle()">
+              <div class="profile-img">
+                <img src="../images/background.jpg" id="Photo"></img>
+              </div>
+              <span>
+                  Tuyển
+                  <i class="fa-solid fa-angle-down"></i>
+              </span>
+            </div>            
+            <ul class="profile-dropdown-list">
+              <li class="profile-dropdown-list-item">
+                <a href="#">
+                  <i class="fa-regular fa-user"></i>
+                  <input type="file" id="file">
+                  <label for="file" id="uploadBtn">Hồ Sơ</label>
+                </a>
+              </li>
+              <li class="profile-dropdown-list-item">
+                <a href="#">
+                  <i class="fa-regular fa-envelope"></i>
+                  Nhắn Tin
+                </a>
+              </li>
+              <li class="profile-dropdown-list-item">
+                <a href="follow.html">
+                  <i class="far fa-heart"></i>
+                  Đang Theo Dõi
+                </a>
+              </li>
+              <li class="profile-dropdown-list-item">
+                <a href="#">
+                  <i class="fa-regular fa-circle-question"></i>
+                  Trợ giúp & Hỗ trợ
+                </a>
+              </li>
+              <hr/>
+              <li class="profile-dropdown-list-item">
+                <a href="index.html">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                  Đăng Xuất
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        <div id="slider">
+          <div class="slider-title l-4 m-4">
+              <h4>chao mung ban den voi </h4>
+              <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ea ipsa iusto voluptas? Magnam, commodi ab nemo, laudantium repellendus nam, odit dolorem quia harum eaque nihil atque tempore iure doloremque!
+              </p>
+          </div>
+          <div class="slider-container l-8 m-8">
+                <div class="slider-container__img">
+                    <button type="submit" class="btn slider-container__btn-left" id="left"><i class="fa-solid fa-arrow-left"></i></button>           
+                    <div class="slider-img">
+                        <img src="../images/sach1.jpg" alt="" title="A Court of Mist and Fury">
+                        <img src="../images/sach2.jpg" alt="" title="Las Aventuras de Sherlock Holmes">
+                        <img src="../images/sach3.jpg" alt="" title="Laurie Halse Anderson">
+                        <img src="../images/sach4.jpg" alt="" title="A Game of Thrones">
+                        <img src="../images/sach5.jpg" alt="" title="All That is Gone">
+                    </div>      
+                    <button type="submit" class="btn slider-container__btn-right" id="right"><i class="fa-solid fa-arrow-right"></i></button> 
+                </div>   
+          </div>
+        </div>
+        <div class="carousel-section">
+          <div class="title">
+              <h1 class="title-h1">
+                  Welcome to Multi-Library
+              </h1>
+          </div>
+          <div class="carousel-container">
+                  <ul id="autoWidth" class="cs-hidden">
+                    <!--slider 1------>
+                    <li class="item-a">
+                          <div class="carousel-item" >
+                      <a href="">
+                        <img src="../images/read.png">
+                        <div class="card-text">
+                          <p class="title">Read Free Library Books Online</p>
+                          <p class="small">Millions of books available through Controlled Digital Lending</p>
+                        </div>
+                      </a>
+                        </div>
+                    </li>
+                    <!--slider 2------>
+                    <li class="item-b">
+                    <div class="carousel-item" >
+                <a href="">
+                  <img src="../images/track.png">
+                  <div class="card-text">
+                    <p class="title">Keep Track of your Favorite Books</p>
+                    <p class="small">Organize your Books using Lists &amp; the Reading Log</p>
+                  </div> 
+                </a>
+                    </div>
+                    </li>
+                    <!--slider 3------>
+                    <li class="item-c">
+                      <div class="carousel-item" >
+                  <a href="">
+                    <img src="../images/library_explorer.png">
+                    <div class="card-text">
+                      <p class="title">Try the virtual Library Explorer</p>
+                      <p class="small">Digital shelves organized like a physical library</p>
+                    </div>
+                  </a>
+                    </div>
+                    </li>
+                   <!--slider 4------>
+                    <li class="item-d">
+                      <div class="carousel-item" >
+                  <a href="">
+                    <img src="../images/fulltext.png">
+                    <div class="card-text">
+                      <p class="title">Try Fulltext Search</p>
+                      <p class="small">Find matching results within the text of millions of books</p>
+                    </div>
+                  </a>
+                    </div>
+                    </li>
+                    <!--slider 5------>
+                    <li class="item-e">
+                      <div class="carousel-item" >
+                  <a href="">
+                    <img src="../images/librarian.png">
+                    <div class="card-text">
+                      <p class="title">Be an Open Librarian</p>
+                      <p class="small">Dozens of ways you can help improve the library</p>
+                    </div>
+                  </a>
+                    </div>
+                    </li>
+                    <!--slider 6------>
+                    <li class="item-f">
+                      <div class="carousel-item" >
+                  <a href="">
+                    <img src="../images/feedback.png">
+                    <div class="card-text">
+                      <p class="title">Send us feedback</p>
+                      <p class="small">Your feedback will help us improve these cards</p>
+                    </div>
+                    </li>
+                  </a>
+              </ul>
+          </div>
+      </div>
+        <!--begin: content------------->
+        <div class="content">
+          <!--begin:content 1 --->
+          <div class="title">
+             <h1 class="title-h1">C L A S S I C &emsp; B O O K S</h1>
+         </div>
+        <ul id="autoWidth-1" class="cs-hidden">
+          <!--slider 1------>
+          <li class="item-a">
+            <div class="swiper-slide">
+              <div class="slider-box">
+              <p class="time">New</p>
+              <div class="img-box">
+                <img src="../images/sach1.jpg" alt="" title="A Court of Mist and Fury">
+              </div>
+              <p class="name">A Court of Mist and Fury<br>
+                <a href="#" class="authur">Sarah J. Maas</a>
+              </p>
+              <div class="cart">
+                <a href="#">Read</a>
+              </div>
+              </div>
+            </div>         
+          </li>
+          <!--slider 2------>
+          <li class="item-b">
+            <div class="swiper-slide">
+              <div class="slider-box">
+              <p class="time">New</p>
+              <div class="img-box">
+                <img src="../images/sach2.jpg" alt="" title="Las Aventuras de Sherlock Holmes">
+              </div>
+              <p class="name">Las Aventuras de Sherlock Holmes<br>
+                <a href="#" class="authur"> Arthur Conan Doyle</a>
+              </p>
+              <div class="cart">
+                <a href="#">Read</a>
+              </div>
+              </div>
+            </div>         
+          </li>
+          <!--slider 3------>
+          <li class="item-c">
+            <div class="swiper-slide">
+              <div class="slider-box">
+              <p class="time">New</p>
+              <div class="img-box">
+                <img src="../images/sach3.jpg" alt="" title="Laurie Halse Anderson">
+              </div>
+              <p class="name">Laurie Halse Anderson<br>
+                <a href="#" class="authur">Wendy J. Glenn</a>
+              </p>
+              <div class="cart">
+                <a href="#">Borrow</a>
+              </div>
+              </div>
+            </div>         
+          </li>
+          <!--slider 4------>
+          <li class="item-d">
+            <div class="swiper-slide">
+              <div class="slider-box">
+              <p class="time">New</p>
+              <div class="img-box">
+                <img src="../images/sach4.jpg" alt="" title="A Game of Thrones">
+              </div>
+              <p class="name">A Game of Thrones<br>
+                <a href="#" class="authur">George R. R. Martin</a>
+              </p>
+              <div class="cart">
+                <a href="#">Read</a>
+              </div>
+              </div>
+            </div>         
+          </li>
+          <!--slider 5------>
+          <li class="item-e">
+            <div class="swiper-slide">
+              <div class="slider-box">
+              <p class="time">New</p>
+              <div class="img-box">
+                <img src="../images/sach5.jpg" alt="" title="All That is Gone">
+              </div>
+              <p class="name">All That is Gone<br>
+                <a href="#" class="authur">Pramoedya Ananta Toer</a>
+              </p>
+              <div class="cart">
+                <a href="#">Borrow</a>
+              </div>
+              </div>
+            </div>         
+          </li>
+          <!--slider 6------>
+          <li class="item-f">
+            <div class="swiper-slide">
+              <div class="slider-box">
+              <p class="time">New</p>
+              <div class="img-box">
+                <img src="../images/sach6.jpg" alt="" title="Kitecraft and kite tournaments">
+              </div>
+              <p class="name">Kitecraft and kite tournaments<br>
+                <a href="#" class="authur">Miller, Charles M</a>
+              </p>
+              <div class="cart">
+                <a href="#">Read</a>
+              </div>
+              </div>
+            </div>         
+          </li>
+          <!--slider 7------>
+          <li class="item-g">
+            <div class="swiper-slide">
+              <div class="slider-box">
+              <p class="time">New</p>
+              <div class="img-box">
+                <img src="../images/sach7.jpg" alt="" title="Searching for the Sound">
+              </div>
+              <p class="name">Searching for the Sound<br>
+                <a href="#" class="authur">Phil Lesh</a>
+              </p>
+              <div class="cart">
+                <a href="#">Borrow</a>
+              </div>
+              </div>
+            </div>         
+          </li>
+          <!--slider 8------>
+          <li class="item-h">
+            <div class="swiper-slide">
+              <div class="slider-box">
+              <p class="time">New</p>
+              <div class="img-box">
+                <img src="../images/sach8.jpg" alt="" title="Starring Jules: In Drama-Rama">
+              </div>
+              <p class="name">Starring Jules: In Drama-Rama<br>
+                <a href="#" class="authur">Beth Ain</a>
+              </p>
+              <div class="cart">
+                <a href="#">read</a>
+              </div>
+              </div>
+            </div>         
+          </li>
+        </ul>   
+   <!--begin: content 2------>
+      <div class="title">
+             <h1 class="title-h1">C L A S S I C &emsp; B O O K S</h1>
+         </div>
+         <ul id="autoWidth-2" class="cs-hidden">
+          <!--slider 1------>
+          <li class="item-a">
+          <div class="swiper-slide">
+            <div class="slider-box">
+            <p class="time">New</p>
+            <div class="img-box">
+              <img src="../images/sach1.jpg" alt="" title="A Court of Mist and Fury">
+            </div>
+            <p class="name">A Court of Mist and Fury<br>
+              <a href="#" class="authur">Sarah J. Maas</a>
+            </p>
+            <div class="cart">
+              <a href="#">Read</a>
+            </div>
+            </div>
+          </div>         
+          </li>
+          <!--slider 2------>
+          <li class="item-b">
+          <div class="swiper-slide">
+            <div class="slider-box">
+            <p class="time">New</p>
+            <div class="img-box">
+              <img src="../images/sach2.jpg" alt="" title="Las Aventuras de Sherlock Holmes">
+            </div>
+            <p class="name">Las Aventuras de Sherlock Holmes<br>
+              <a href="#" class="authur"> Arthur Conan Doyle</a>
+            </p>
+            <div class="cart">
+              <a href="#">Read</a>
+            </div>
+            </div>
+          </div>         
+          </li>
+          <!--slider 3------>
+          <li class="item-c">
+          <div class="swiper-slide">
+            <div class="slider-box">
+            <p class="time">New</p>
+            <div class="img-box">
+              <img src="../images/sach3.jpg" alt="" title="Laurie Halse Anderson">
+            </div>
+            <p class="name">Laurie Halse Anderson<br>
+              <a href="#" class="authur">Wendy J. Glenn</a>
+            </p>
+            <div class="cart">
+              <a href="#">Borrow</a>
+            </div>
+            </div>
+          </div>         
+          </li>
+          <!--slider 4------>
+          <li class="item-d">
+          <div class="swiper-slide">
+            <div class="slider-box">
+            <p class="time">New</p>
+            <div class="img-box">
+              <img src="../images/sach4.jpg" alt="" title="A Game of Thrones">
+            </div>
+            <p class="name">A Game of Thrones<br>
+              <a href="#" class="authur">George R. R. Martin</a>
+            </p>
+            <div class="cart">
+              <a href="#">Read</a>
+            </div>
+            </div>
+          </div>         
+          </li>
+          <!--slider 5------>
+          <li class="item-e">
+          <div class="swiper-slide">
+            <div class="slider-box">
+            <p class="time">New</p>
+            <div class="img-box">
+              <img src="../images/sach5.jpg" alt="" title="All That is Gone">
+            </div>
+            <p class="name">All That is Gone<br>
+              <a href="#" class="authur">Pramoedya Ananta Toer</a>
+            </p>
+            <div class="cart">
+              <a href="#">Borrow</a>
+            </div>
+            </div>
+          </div>         
+          </li>
+          <!--slider 6------>
+          <li class="item-f">
+          <div class="swiper-slide">
+            <div class="slider-box">
+            <p class="time">New</p>
+            <div class="img-box">
+              <img src="../images/sach6.jpg" alt="" title="Kitecraft and kite tournaments">
+            </div>
+            <p class="name">Kitecraft and kite tournaments<br>
+              <a href="#" class="authur">Miller, Charles M</a>
+            </p>
+            <div class="cart">
+              <a href="#">Read</a>
+            </div>
+            </div>
+          </div>         
+          </li>
+          <!--slider 7------>
+          <li class="item-g">
+          <div class="swiper-slide">
+            <div class="slider-box">
+            <p class="time">New</p>
+            <div class="img-box">
+              <img src="../images/sach7.jpg" alt="" title="Searching for the Sound">
+            </div>
+            <p class="name">Searching for the Sound<br>
+              <a href="#" class="authur">Phil Lesh</a>
+            </p>
+            <div class="cart">
+              <a href="#">Borrow</a>
+            </div>
+            </div>
+          </div>         
+          </li>
+          <!--slider 8------>
+          <li class="item-h">
+          <div class="swiper-slide">
+            <div class="slider-box">
+            <p class="time">New</p>
+            <div class="img-box">
+              <img src="../images/sach8.jpg" alt="" title="Starring Jules: In Drama-Rama">
+            </div>
+            <p class="name">Starring Jules: In Drama-Rama<br>
+              <a href="#" class="authur">Beth Ain</a>
+            </p>
+            <div class="cart">
+              <a href="#">read</a>
+            </div>
+            </div>
+          </div>         
+          </li>
+         </ul>     
+       </div>
+         <!--end: content------------->
+         <!--begin: footer-->
+         <footer class="footer">
+          <div class="grid wide">
+              <div class="row">
+                  <div class="col l-2-4 m-4 c-6">
+                      <h3 class="footer__heading">Chăm Sóc khách Hàng</h3>
+                      <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Tư Vấn Khách Hàng</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Hướng Dẫn Mượn Trả</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Hỗ trợ người dùng</a>
+                        </li>
+                      </ul>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
+                     <h3 class="footer__heading">Giới Thiệu</h3>
+                     <ul class="footer-list">
+                      <li class="footer-item">
+                          <a href="" class="footer-item__link">Giới Thiệu</a>
+                      </li>
+                      <li class="footer-item">
+                          <a href="" class="footer-item__link">Bản Quyền</a>
+                      </li>
+                      <li class="footer-item">
+                          <a href="" class="footer-item__link">Điều Khoản</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
+                    <h3 class="footer__heading">Multiple-Library</h3>
+                    <ul class="footer-list">
+                      <li class="footer-item">
+                          <a href="" class="footer-item__link">Home</a>
+                      </li>
+                      <li class="footer-item">
+                          <a href="" class="footer-item__link">Tìm Kiếm</a>
+                      </li>
+                      <li class="footer-item">
+                          <a href="" class="footer-item__link">Xếp Hạng</a>
+                      </li>
+                      <li class="footer-item">
+                        <a href="" class="footer-item__link">Thể Loại</a>
+                    </li>
+                    </ul>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
+                    <h3 class="footer__heading">Theo Dõi</h3>
+                    <ul class="footer-list">
+                      <li class="footer-item">
+                          <a href="https://www.facebook.com/profile.php?id=100014728930650" class="footer-item__link">
+                            <i class="footer-item__icon fab fa-facebook"></i>
+                            Facebook
+                          </a>
+                      </li>
+                      <li class="footer-item">
+                          <a href="https://www.instagram.com/xtuyen.04/" class="footer-item__link">
+                            <i class="footer-item__icon fab fa-instagram"></i>
+                            Instagram
+                          </a>
+                      </li>
+                      <li class="footer-item">
+                          <a href="https://www.linkedin.com/" class="footer-item__link">
+                            <i class="footer-item__icon fab fa-linkedin"></i>
+                            Linkedin
+                          </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col l-2-4 m-8 c-12">
+                    <h3 class="footer__heading">Ủng Hộ Chúng Tôi</h3>
+                    <div class="footer__bank">
+                        <img src="../images/QR.jpg" alt="QR Code" class="footer__bank-qr"> 
+                    </div>
+                  </div>
+              </div>
+          </div>
+         </footer>
+       <!--end: footer-->
+     </div>
+</body>
+    <script src="../JS/lightslider.js"></script>
+    <script src="../JS/app.js"></script>
+</html>
