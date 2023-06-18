@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Lịch Sử Đọc | Multi-library</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css'>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/profile.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/grid.css">
+        <link rel="shortcut icon" href="../images/logo3.png" type="image/x-icon">
+        <script src="../JS/Jquery.js"></script>
+    </head>
+    <body>
+      <div id="header">
+        <div class="header grid1 wide">
+          <div class="navbar">
+            <div class="container-navbar">
+                <a href="./trangchu.html" class="navbar-brand" title="Multi-library">
+                    <img src="../images/logo3.png" alt="" class="navbar-brand__img">
+                </a>
+                <div class="navbar-nav hide-on-mobile-tablet">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-item__link nav-item__type" onclick="toggle1()">
+                              <i class="fa-solid fa-book"></i>
+                              <span class="nav-item__text">Thể Loại</span>
+                            </a>
+                            <div class="nav-item__type-list">
+                              <div class="grid wide">
+                                <div class="grid__row-dropdown">
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Lịch Sử</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                     <a href="#" class="dropdown-item">Tình cảm</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Sử Thi</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Viễn Tưởng</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                     <a href="#" class="dropdown-item">Trinh Thám</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                     <a href="#" class="dropdown-item">Khoa Học</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                     <a href="#" class="dropdown-item">Trữ Tình</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Kinh Dị</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                     <a href="#" class="dropdown-item">Tâm Lý</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Phiêu Lưu</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Giáo Dục</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Ngôn Tình</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Thần Bí</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                     <a href="#" class="dropdown-item">Tiểu Thuyết</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Hành Động</a>
+                                  </div>
+                                </div>
+                              </div>  
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-item__link nav-item__rank" onclick="toggle2()">
+                            <i class="fa-solid fa-crown"></i>
+                            <span class="nav-item__text">Xếp Hạng</span>
+                          </a>
+                          <div class="nav-item__rank-list">
+                            <div class="grid wide">
+                              <div class="grid__row-dropdown">
+                                <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                  <a href="#" class="dropdown-item">
+                                  <i class="grid__column-2-4-icon fa-solid fa-eye"></i>Top all</a>
+                                </div>
+                                <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                  <a href="#" class="dropdown-item">
+                                  <i class="grid__column-2-4-icon fa-solid fa-eye"></i>Top Ngày</a>
+                                </div>
+                                <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                  <a href="#" class="dropdown-item">
+                                  <i class="grid__column-2-4-icon fa-solid fa-eye"></i>Top Tháng</a>
+                                </div>
+                                <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                  <a href="#" class="dropdown-item">
+                                  <i class="grid__column-2-4-icon fa-solid fa-heart"></i>Top Theo Dõi</a>
+                                </div>
+                                <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                  <a href="#" class="dropdown-item">
+                                  <i class="grid__column-2-4-icon fa-solid fa-eye"></i>Top Tuần</a>
+                                </div>
+                                <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                  <a href="#" class="dropdown-item">
+                                  <i class="grid__column-2-4-icon fa-solid fa-thumbs-up"></i>Yêu Thích</a>
+                                </div>
+                              </div>
+                            </div>  
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                        <a href="../HTML/search.html" class="nav-item__link">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                          <span class="nav-item__text">Tìm Kiếm</span>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+            <label class="nav__bars-btn" for="nav-mobile-input">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+            <input type="checkbox" name="" id="nav-mobile-input">
+            <label  for="nav-mobile-input" class="nav__overlay"></label>
+            <div class="nav__mobile">
+              <div class="nav__mobile-header">
+                <div class="nav__mobile-profile">
+                  <div class="profile-img nav__mobile-profile-img">
+                    <img src="../images/background.jpg" id="Photo"></img>
+                  </div>
+                  <span class="nav__mobile-profile-name">
+                      Tuyển
+                  </span>
+                </div>  
+                <label for="nav-mobile-input" class="nav__mobile-close">
+                  <i class="fa-sharp fa-solid fa-xmark nav__mobile-img"></i>
+                </label>
+                
+              </div>
+              <form action="" id="search-box" class="hide-on-tablet">
+                <button class="search-btn search-btn__mobile"><img src="../images/magnifier1.png" alt=""></button>
+                <input type="text" class="search-text search-text__mobile" placeholder="Nhập từ khóa" required>
+              </form>
+              <ul class="nav__mobile-list">
+                <li class="nav__mobile-item">
+                  <a href="trangchu.html" class="nav__mobile-link">
+                    <i class="nav__mobile-link-img fa-sharp fa-solid fa-house"></i> 
+                    Trang Chủ
+                  </a>
+                </li>
+                <li class="nav__mobile-item">
+                  <a href="profile.html" class="nav__mobile-link">
+                    <i class="nav__mobile-link-img fa-regular fa-user"></i>
+                    Hồ sơ
+                  </a>
+                </li>
+                <li class="nav__mobile-item">
+                  <a href="search.html" class="nav__mobile-link">
+                    <i class="nav__mobile-link-img fa-solid fa-magnifying-glass"></i>
+                    Tìm Kiếm
+                  </a>
+                </li>
+                <li class="nav__mobile-item">
+                  <a href="follow.html" class="nav__mobile-link">
+                    <i class="nav__mobile-link-img far fa-heart"></i>
+                    Đang Theo Dõi
+                  </a>
+                </li>
+                <li class="nav__mobile-item">
+                  <a href="history.html" class="nav__mobile-link">
+                    <i class="nav__mobile-link-img fa-sharp fa-solid fa-clock-rotate-left"></i>
+                    Lịch Sử Đọc
+                  </a>
+                </li>
+                <li class="nav__mobile-item">
+                  <a href="index.html" class="nav__mobile-link">
+                    <i class="nav__mobile-link-img fa-solid fa-arrow-right-from-bracket"></i>
+                    Đăng Xuất
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <form action="" id="search-box" class="hide-on-mobile">
+            <button class="search-btn"><img src="../images/magnifier1.png" alt=""></button>
+            <input type="text" class="search-text" placeholder="Nhập từ khóa" required>
+          </form>
+          <div class="profile-dropdown hide-on-mobile-tablet">
+            <div class="profile-dropdown-btn" onclick="toggle()">
+              <div class="profile-img">
+                <img src="../images/background.jpg" id="Photo"></img>
+              </div>
+              <span>
+                  Tuyển
+              </span>
+            </div>            
+            <ul class="profile-dropdown-list">
+              <li class="profile-dropdown-list-item">
+                <a href="profile.html">
+                  <i class="fa-regular fa-user"></i>
+                  Hồ sơ
+                </a>
+              </li>
+              <li class="profile-dropdown-list-item">
+                <a href="history.html">
+                  <i class="fa-sharp fa-solid fa-clock-rotate-left"></i>
+                  Lịch Sử Đọc
+                </a>
+              </li>
+              <li class="profile-dropdown-list-item">
+                <a href="follow.html">
+                  <i class="far fa-heart"></i>
+                  Đang Theo Dõi
+                </a>
+              </li>
+              <li class="profile-dropdown-list-item">
+                <a href="#">
+                  <i class="fa-regular fa-circle-question"></i>
+                  Trợ giúp & Hỗ trợ
+                </a>
+              </li>
+              <hr/>
+              <li class="profile-dropdown-list-item">
+                <a href="index.html">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                  Đăng Xuất
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="grid wide">
+          <div class="container-profile">
+            <div class="container-profile-left l-3 hide-on-mobile-tablet">
+              <div class="nav__mobile-profile">
+                <div class="profile-img nav__mobile-profile-img">
+                  <img src="../images/background.jpg" id="Photo"></img>
+                </div>
+                <span class="nav__mobile-profile-name">
+                    Tuyển
+                </span>
+              </div> 
+              <div class="nav-tabs-wrap">
+                <ul class="nav-tabs">
+                  <li class="nav-tabs__item">
+                    <a href="profile.html" class="nav-tabs__link">
+                      <i class="fa-solid fa-wrench"></i>
+                      Cài đặt tài khoản
+                    </a>
+                  </li>
+                  <li class="nav-tabs__item">
+                    <a href="history.html" class="nav-tabs__link">
+                      <i class="fa-sharp fa-solid fa-clock-rotate-left"></i>
+                      Lịch sử đọc
+                    </a>
+                  </li>
+                  <li class="nav-tabs__item">
+                    <a href="follow.html" class="nav-tabs__link">
+                      <i class="far fa-heart"></i>
+                      Đang theo dõi
+                    </a>
+                  </li>
+                  <li class="nav-tabs__item">
+                    <a href="index.html" class="nav-tabs__link">
+                      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                      Đăng xuất
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="container-profile-right l-9 c-12 m-12">
+              <div class="tabs-content-wrap">
+                <h2 class="tabs-content-title">Lịch sử đọc</h2>
+                <hr>
+                <span>Bạn chưa từng đọc bất kỳ cuốn sách nào</span>
+              </div>
+            </div>
+          </div>
+      </div>
+      <footer class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-2-4 m-4 c-6">
+                    <h3 class="footer__heading">Chăm Sóc khách Hàng</h3>
+                    <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Tư Vấn Khách Hàng</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Hướng Dẫn Mượn Trả</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Hỗ trợ người dùng</a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                <h3 class="footer__heading">Giới Thiệu</h3>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Giới Thiệu</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Bản Quyền</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Điều Khoản</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                <h3 class="footer__heading">Multi-library</h3>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                      <a href="trangchu.html" class="footer-item__link">Trang Chủ</a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="search.html" class="footer-item__link">Tìm Kiếm</a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="profile.html" class="footer-item__link">Hồ Sơ</a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="history.html" class="footer-item__link">Lịch Sử</a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="follow.html" class="footer-item__link">Đang Theo Dõi</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                <h3 class="footer__heading">Theo Dõi</h3>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="https://www.facebook.com/profile.php?id=100014728930650" class="footer-item__link">
+                        <i class="footer-item__icon fab fa-facebook"></i>
+                        Facebook
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="https://www.instagram.com/xtuyen.04/" class="footer-item__link">
+                        <i class="footer-item__icon fab fa-instagram"></i>
+                        Instagram
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="https://www.linkedin.com/" class="footer-item__link">
+                        <i class="footer-item__icon fab fa-linkedin"></i>
+                        Linkedin
+                        </a>
+                    </li>
+                </ul>
+                </div>
+                <div class="col l-2-4 m-8 c-12">
+                <h3 class="footer__heading">Ủng Hộ Chúng Tôi</h3>
+                <div class="footer__bank">
+                    <img src="../images/QR.jpg" alt="QR Code" class="footer__bank-qr"> 
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <script src="../JS/app.js"></script>
+    </body>
+</html>

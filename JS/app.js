@@ -43,8 +43,25 @@ $(document).ready(function() {
             $('#autoWidth-2').removeClass('cS-hidden');
         } 
     });  
-  });  
-
+});  
+  $(document).ready(function() {
+    $('#autoWidth-3').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth-3').removeClass('cS-hidden');
+        } 
+    });  
+});
+  $(document).ready(function() {
+    $('#autoWidth-4').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth-4').removeClass('cS-hidden');
+        } 
+    });  
+});
 let profileDropdownList = document.querySelector(".profile-dropdown-list");
 let btn = document.querySelector(".profile-dropdown-btn");
 const toggle = () => profileDropdownList.classList.toggle("active");
@@ -66,7 +83,7 @@ window.addEventListener('click',function(e){
 if(!navItemRank.contains(e.target))navItemRankList.classList.remove('active')
 });
 
-const imgDiv = document.querySelector('.profile-img');
+const imgDiv = document.querySelector('.choose-avatar');
 const img    = document.querySelector('#Photo');
 const file   = document.querySelector('#file');
 const uploadBtn = document.querySelector('#uploadBtn');
@@ -85,3 +102,4 @@ file.addEventListener('change',function() {
         reader.readAsDataURL(choosedFile);
     }
 });
+

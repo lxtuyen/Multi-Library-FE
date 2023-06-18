@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Game of Thrones | Multi-library</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/book.css">
+    <link rel="stylesheet" href="../css/lightslider.css">
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="../images/logo3.png" type="image/x-icon">
+    <script src="../JS/Jquery.js"></script>  
+</head>
+<body>
+    <div id="main">
+      <div id="header">
+        <div class="header grid1 wide">
+          <div class="navbar">
+            <div class="container-navbar">
+                <a href="./trangchu.html" class="navbar-brand" title="Multi-library">
+                    <img src="../images/logo3.png" alt="" class="navbar-brand__img">
+                </a>
+                <div class="navbar-nav hide-on-mobile-tablet">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-item__link nav-item__type" onclick="toggle1()">
+                              <i class="fa-solid fa-book"></i>
+                              <span class="nav-item__text">Thể Loại</span>
+                            </a>
+                            <div class="nav-item__type-list">
+                              <div class="grid wide">
+                                <div class="grid__row-dropdown">
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Lịch Sử</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                     <a href="#" class="dropdown-item">Tình cảm</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Sử Thi</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Viễn Tưởng</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                     <a href="#" class="dropdown-item">Trinh Thám</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                     <a href="#" class="dropdown-item">Khoa Học</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                     <a href="#" class="dropdown-item">Trữ Tình</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Kinh Dị</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                     <a href="#" class="dropdown-item">Tâm Lý</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Phiêu Lưu</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Giáo Dục</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Ngôn Tình</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Thần Bí</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                     <a href="#" class="dropdown-item">Tiểu Thuyết</a>
+                                  </div>
+                                  <div class="grid__column-2-4-dropdown">
+                                      <a href="#" class="dropdown-item">Hành Động</a>
+                                  </div>
+                                </div>
+                              </div>  
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-item__link nav-item__rank" onclick="toggle2()">
+                            <i class="fa-solid fa-crown"></i>
+                            <span class="nav-item__text">Xếp Hạng</span>
+                          </a>
+                          <div class="nav-item__rank-list">
+                            <div class="grid wide">
+                              <div class="grid__row-dropdown">
+                                <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                  <a href="#" class="dropdown-item">
+                                  <i class="grid__column-2-4-icon fa-solid fa-eye"></i>Top all</a>
+                                </div>
+                                <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                  <a href="#" class="dropdown-item">
+                                  <i class="grid__column-2-4-icon fa-solid fa-eye"></i>Top Ngày</a>
+                                </div>
+                                <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                  <a href="#" class="dropdown-item">
+                                  <i class="grid__column-2-4-icon fa-solid fa-eye"></i>Top Tháng</a>
+                                </div>
+                                <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                  <a href="#" class="dropdown-item">
+                                  <i class="grid__column-2-4-icon fa-solid fa-heart"></i>Top Theo Dõi</a>
+                                </div>
+                                <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                  <a href="#" class="dropdown-item">
+                                  <i class="grid__column-2-4-icon fa-solid fa-eye"></i>Top Tuần</a>
+                                </div>
+                                <div class="grid__column-2-4-dropdown grid__column-2-4-rank">
+                                  <a href="#" class="dropdown-item">
+                                  <i class="grid__column-2-4-icon fa-solid fa-thumbs-up"></i>Yêu Thích</a>
+                                </div>
+                              </div>
+                            </div>  
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                        <a href="../HTML/search.html" class="nav-item__link">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                          <span class="nav-item__text">Tìm Kiếm</span>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+            <ul class="book-navbar book-navbar-mobile hide-on-pc">
+              <li class="book-navbar__item book-navbar__item--active"><a href="" class="book-navbar__link book-link__item--active">Tổng Quan</a></li>
+              <li class="book-navbar__item"><a href="#book-details2" class="book-navbar__link">Chi Tiết</a></li>
+              <li class="book-navbar__item"><a href="#comment-container" class="book-navbar__link">Bình Luận</a></li>
+              <li class="book-navbar__item"><a href="#book-related" class="book-navbar__link">Sách Liên Quan</a></li>
+            </ul>
+            <label class="nav__bars-btn" for="nav-mobile-input">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+            <input type="checkbox" name="" id="nav-mobile-input">
+            <label  for="nav-mobile-input" class="nav__overlay"></label>
+            <div class="nav__mobile">
+              <div class="nav__mobile-header">
+                <div class="nav__mobile-profile">
+                  <div class="profile-img nav__mobile-profile-img">
+                    <img src="../images/background.jpg" id="Photo"></img>
+                  </div>
+                  <span class="nav__mobile-profile-name">
+                      Tuyển
+                  </span>
+                </div>  
+                <label for="nav-mobile-input" class="nav__mobile-close">
+                  <i class="fa-sharp fa-solid fa-xmark nav__mobile-img"></i>
+                </label>
+                
+              </div>
+              <form action="" id="search-box" class="hide-on-tablet">
+                <button class="search-btn search-btn__mobile"><img src="../images/magnifier1.png" alt=""></button>
+                <input type="text" class="search-text search-text__mobile" placeholder="Nhập từ khóa" required>
+              </form>
+              <ul class="nav__mobile-list">
+                <li class="nav__mobile-item">
+                  <a href="trangchu.html" class="nav__mobile-link">
+                    <i class="nav__mobile-link-img fa-sharp fa-solid fa-house"></i> 
+                    Trang Chủ
+                  </a>
+                </li>
+                <li class="nav__mobile-item">
+                  <a href="profile.html" class="nav__mobile-link">
+                    <i class="nav__mobile-link-img fa-regular fa-user"></i>
+                    Hồ sơ
+                  </a>
+                </li>
+                <li class="nav__mobile-item">
+                  <a href="search.html" class="nav__mobile-link">
+                    <i class="nav__mobile-link-img fa-solid fa-magnifying-glass"></i>
+                    Tìm Kiếm
+                  </a>
+                </li>
+                <li class="nav__mobile-item">
+                  <a href="follow.html" class="nav__mobile-link">
+                    <i class="nav__mobile-link-img far fa-heart"></i>
+                    Đang Theo Dõi
+                  </a>
+                </li>
+                <li class="nav__mobile-item">
+                  <a href="history.html" class="nav__mobile-link">
+                    <i class="nav__mobile-link-img fa-sharp fa-solid fa-clock-rotate-left"></i>
+                    Lịch Sử Đọc
+                  </a>
+                </li>
+                <li class="nav__mobile-item">
+                  <a href="index.html" class="nav__mobile-link">
+                    <i class="nav__mobile-link-img fa-solid fa-arrow-right-from-bracket"></i>
+                    Đăng Xuất
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <form action="" id="search-box" class="hide-on-mobile">
+            <button class="search-btn"><img src="../images/magnifier1.png" alt=""></button>
+            <input type="text" class="search-text" placeholder="Nhập từ khóa" required>
+          </form>
+          <div class="profile-dropdown hide-on-mobile-tablet">
+            <div class="profile-dropdown-btn" onclick="toggle()">
+              <div class="profile-img">
+                <img src="../images/background.jpg" id="Photo"></img>
+              </div>
+              <span>
+                  Tuyển
+              </span>
+            </div>            
+            <ul class="profile-dropdown-list">
+              <li class="profile-dropdown-list-item">
+                <a href="profile.html">
+                  <i class="fa-regular fa-user"></i>
+                  Hồ sơ
+                </a>
+              </li>
+              <li class="profile-dropdown-list-item">
+                <a href="history.html">
+                  <i class="fa-sharp fa-solid fa-clock-rotate-left"></i>
+                  Lịch Sử Đọc
+                </a>
+              </li>
+              <li class="profile-dropdown-list-item">
+                <a href="follow.html">
+                  <i class="far fa-heart"></i>
+                  Đang Theo Dõi
+                </a>
+              </li>
+              <li class="profile-dropdown-list-item">
+                <a href="#">
+                  <i class="fa-regular fa-circle-question"></i>
+                  Trợ giúp & Hỗ trợ
+                </a>
+              </li>
+              <hr/>
+              <li class="profile-dropdown-list-item">
+                <a href="index.html">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                  Đăng Xuất
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        <div class="container">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 book-container__left hide-on-mobile-tablet">
+                        <div class="read-options">
+                            <div class="read-options__box-img">
+                                <img src="../images/sach4.jpg" alt="" class="read-options__img">
+                            </div>
+                            <div class="read-options__button">
+                                <a href="" class="read-options__link">
+                                    <span class="read-options__icon">
+                                        <i class="fa-solid fa-book-open-reader"></i>
+                                    </span>
+                                    <span class="read-options__label">
+                                        Đọc
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="read-options__button">
+                                <a href="" class="read-options__link">
+                                    <span class="read-options__icon">
+                                        <i class="fa-solid fa-book"></i>
+                                    </span>
+                                    <span class="read-options__label">
+                                        Mượn Sách
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="read-options__button">
+                                <a href="" class="read-options__link">
+                                    <span class="read-options__icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                    <span class="read-options__label">
+                                        Theo Dõi
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="rating">
+                              <input value="star-1" name="star-radio" id="star-1" type="radio">
+                              <label for="star-1">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+                              </label>
+                              <input value="star-1" name="star-radio" id="star-2" type="radio">
+                              <label for="star-2">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+                              </label>
+                              <input value="star-1" name="star-radio" id="star-3" type="radio">
+                              <label for="star-3">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+                              </label>
+                              <input value="star-1" name="star-radio" id="star-4" type="radio">
+                              <label for="star-4">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+                              </label>
+                              <input value="star-1" name="star-radio" id="star-5" type="radio">
+                              <label for="star-5">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+                              </label>
+                            </div>
+                            <hr>
+                            <div class="read-options__modal-link">
+                                <div>
+                                    <a href="" class="read-options__icon-link">
+                                        <img src="../images/reviews.svg" alt="" class="icon-link__img">
+                                        <div class="icon-link__text">
+                                            Review
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" class="read-options__icon-link">
+                                        <img src="../images/notes.svg" alt="" class="icon-link__img">
+                                        <div class="icon-link__text">
+                                            Ghi Chú
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" class="read-options__icon-link">
+                                        <img src="../images/share.svg" alt="" class="icon-link__img">
+                                        <div class="icon-link__text">
+                                            Chia Sẻ
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-vendor">
+                            <div class="btn-notice">
+                                <div class="section">
+                                    <p class="section-title">Kiểm tra các thư viện gần đây:</p>
+                                    <ul class="section__list">
+                                        <li class="section__item">
+                                            <a href="" class="section__link">Library.link</a>
+                                        </li>
+                                        <li class="section__item">
+                                            <a href="" class="section__link">WorldCat</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="section">
+                                    <p class="section-title">Mua cuốn sách này tại:</p>
+                                    <ul class="section__list">
+                                        <li class="section__item">
+                                            <a href="" class="section__link">Better World Books</a>
+                                        </li>
+                                        <li class="section__item">
+                                            <a href="" class="section__link">Amazon</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-9 book-container__right hide-on-mobile-tablet">
+                        <div class="desktop-book-header">
+                            <h1 class="book-header__title">
+                                A Game of Thrones
+                            </h1>
+                            <h2 class="book-header__author">
+                                By
+                                <a href="" class="book-header__author-link">George R. R. Martin</a>
+                            </h2>
+                            <ul class="reader-stats">
+                                <li class="reader-stats__item">
+                                    <div class="reader-stats__rating">
+                                        <i class="home-product-item__start--gold fas fa-star"></i>
+                                        <i class="home-product-item__start--gold fas fa-star"></i>
+                                        <i class="home-product-item__start--gold fas fa-star"></i>
+                                        <i class="home-product-item__start--gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="reader-stats__ratingValue">4.27</span>
+                                </li>
+                                <li class="reader-stats__item">
+                                    343 Đánh giá
+                                </li>
+                                <li class="reader-stats__item">
+                                    2989 Muốn đọc
+                                </li>
+                                <li class="reader-stats__item">
+                                    171 Hiện đang đọc
+                                </li>
+                                <li class="reader-stats__item">
+                                    396 Đã đọc
+                                </li>
+                            </ul>
+                            <ul class="book-navbar book-navbar-on-pc">
+                                <li class="book-navbar__item book-navbar__item--active"><a href="" class="book-navbar__link book-link__item--active">Tổng Quan</a></li>
+                                <li class="book-navbar__item"><a href="#book-details1" class="book-navbar__link">Chi Tiết</a></li>
+                                <li class="book-navbar__item"><a href="#comment-container" class="book-navbar__link">Bình Luận</a></li>
+                                <li class="book-navbar__item"><a href="#book-related" class="book-navbar__link">Sách Liên Quan</a></li>
+                            </ul>
+                            <div class="book-info">
+                                <div class="book-info__item">
+                                    <p class="book-info__title">
+                                        Ngày xuất bản
+                                    </p>
+                                    <span class="book-info__text">
+                                        May 28, 2002
+                                    </span>
+                                </div>
+                                <div class="book-info__item">
+                                    <p class="book-info__title">
+                                        Nhà xuất bản
+                                    </p>
+                                    <span class="book-info__text">
+                                        BOOK Bantam
+                                    </span>
+                                </div>
+                                <div class="book-info__item">
+                                    <p class="book-info__title">
+                                        Ngôn ngữ
+                                    </p>
+                                    <span class="book-info__text">
+                                        Tiếng Anh
+                                    </span>
+                                </div>
+                                <div class="book-info__item">
+                                    <p class="book-info__title">
+                                        Trang
+                                    </p>
+                                    <span class="book-info__text">
+                                        704
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="previews-languages">
+                                    <h6 class="previews-languages__label">Bản xem trước có sẵn trong:</h6>
+                                    <a href="" class="previews-languages__link">Tiếng Anh</a>,
+                                    <a href="" class="previews-languages__link">Tiếng Nhật</a>,
+                                    <a href="" class="previews-languages__link">Tiếng Pháp</a>.
+                            </div>
+                            <div class="book-decription">
+                                <input type="checkbox" name="" id="book-decription__show">
+                                <p class="book-decription__content">
+                                    Đây là tập đầu tiên trong chu kỳ tiểu thuyết tuyệt vời của George R. R. Martin bao gồm A Clash of Kings và A Storm of Swords.
+                                     Nhìn chung, bộ truyện này bao gồm một kiệt tác giả tưởng hiện đại đích thực,
+                                     tập hợp những gì tốt nhất mà thể loại này cung cấp.
+                                     Ma thuật, bí ẩn, mưu mô, lãng mạn và phiêu lưu lấp đầy những trang này và đưa chúng
+                                </p>
+                                <div class="book-decription__container book-decription__none">
+                                  <p class="book-decription__content">
+                                    A GAME OF THRONES
+                                </p>
+                                <p class="book-decription__content">
+                                    Cách đây rất lâu, trong một thời gian bị lãng quên, một sự kiện phi tự nhiên đã khiến các mùa mất cân bằng.
+                                     Ở một vùng đất mà mùa hè có thể kéo dài hàng thập kỷ và mùa đông suốt đời,
+                                     rắc rối đang âm ỉ. Cái lạnh đang quay trở lại,
+                                     và trong những chất thải đóng băng ở phía bắc Winterfell,
+                                     các thế lực nham hiểm và siêu nhiên đang tập trung bên ngoài Bức tường bảo vệ của vương quốc. Ở trung tâm của cuộc xung đột là Starks of Winterfell, một gia đình khắc nghiệt và kiên cường như vùng đất mà họ sinh ra. Quét từ một vùng đất lạnh lẽo tàn bạo đến một vương quốc mùa hè xa xôi của sự phong phú của epicurean, đây là một câu chuyện về các lãnh chúa và phụ nữ, binh lính và phù thủy, sát thủ và tên khốn, những người đến với nhau trong một thời gian của điềm báo nghiệt ngã.
+                                </p>
+                                <p class="book-decription__content">
+                                    Ở đây một nhóm chiến binh bí ẩn mang thanh kiếm không có kim loại của con người;
+                                     một bộ lạc của những con hoang dã hung dữ mang theo con người vào sự điên cuồng;
+                                     một hoàng tử rồng trẻ tuổi độc ác trao đổi em gái của mình để giành lại ngai vàng của mình;
+                                     Và một người phụ nữ quyết tâm thực hiện những cuộc hành trình nguy hiểm nhất.
+                                     Giữa những âm mưu và âm mưu phản công, bi kịch và phản bội, chiến thắng và khủng bố, số phận của Starks, đồng minh và kẻ thù của họ bị treo lơ lửng một cách nguy hiểm, khi mỗi người cố gắng giành chiến thắng trong cuộc xung đột chết chóc nhất: trò chơi vương quyền.
+                                     --bìa sau
+                                </p> 
+                              </div>
+                              <label for="book-decription__show">Đọc Thêm</label>
+                            </div>
+                            <div class="subject-content">
+                                <div class="link-box">
+                                    <h6 class="subject-content__title">Thể Loại: </h6>
+                                    <a href="" class="subject-content__link">Hành Động</a>,
+                                    <a href="" class="subject-content__link">Tiểu Thuyết</a>,
+                                    <a href="" class="subject-content__link">Sử Thi</a>,
+                                    <a href="" class="subject-content__link">Phiêu Lưu</a>.
+                                </div>
+                                <div class="link-box">
+                                    <h6 class="subject-content__title">Nhân Vật Chính: </h6>
+                                    <a href="" class="subject-content__link">Illyrio</a>,
+                                    <a href="" class="subject-content__link">Jon Arryn</a>,
+                                    <a href="" class="subject-content__link">Robet Baratheon</a>,
+                                    <a href="" class="subject-content__link">Eddard Stark</a>.
+                                    ...
+                                </div>
+                                <div class="link-box">
+                                    <h6 class="subject-content__title">Địa Điểm: </h6>
+                                    <a href="" class="subject-content__link">Winterfell</a>,
+                                    <a href="" class="subject-content__link">King's Landing</a>,
+                                    <a href="" class="subject-content__link">Seven Kingdoms</a>,
+                                    <a href="" class="subject-content__link">Westeros</a>,
+                                    <a href="" class="subject-content__link">Sunset Lands</a>.
+                                </div>
+                            </div>
+                            <div class="book-details" id="book-details1">
+                                <h2 class="details-title">Chi Tiết Sách</h2>
+                                <hr>
+                                <div class="section">
+                                    <h3 class="section-header">Xuất bản tại</h3>
+                                    <p class="section-text">New York, Hoa Kỳ</p>
+                                </div>
+                                <div class="section">
+                                    <h3 class="section-header">Ghi CHú Phiên Bản</h3>
+                                    <p class="section-text">HOA KỲ/CANADA</p>
+                                    <dl>
+                                        <dt>Loạt:</dt>
+                                        <dd>A Song of Ice and Fire, Quyển Một</dd>
+                                        <dt>Ngày bản quyền:</dt>
+                                        <dd>1996</dd>
+                                    </dl>
+                                </div>
+                                <div class="section">
+                                    <h3 class="section-header">Ghi Chú Phiên Bản</h3>
+                                    <dl>
+                                        <dt>Lớp thập phân Dewey:</dt>
+                                        <dd>813.54</dd>
+                                        <dt>Thư viện Quốc hội:</dt>
+                                        <dd>95-43963</dd>
+                                    </dl>
+                                </div>
+                                <div class="section">
+                                    <h3 class="section-header">Đóng góp</h3>
+                                    <dl>
+                                        <dt>Ảnh bìa:</dt>
+                                        <dd>Stephen Youll</dd>
+                                        <dt>Thiết kế bìa:</dt>
+                                        <dd>Jaime S. Warren Youll</dd>
+                                        <dt>Người vẽ bản đồ:</dt>
+                                        <dd>James Sinclair</dd>
+                                        <dt>Nhà thiết kế sách:</dt>
+                                        <dd>James Sinclair</dd>
+                                        <dt>Bản vẽ:</dt>
+                                        <dd>Virginia Norey</dd>
+                                    </dl>
+                                </div>
+                                <div class="section">
+                                    <h3 class="section-header">Mô tả:</h3>
+                                    <p class="section-text section-detail">
+                                        A Game of Thrones là cuốn tiểu thuyết đầu tiên trong A Song of Ice and Fire,
+                                         một loạt tiểu thuyết giả tưởng của tác giả người Mỹ George R. R. Martin.
+                                         Nó được xuất bản lần đầu tiên vào ngày 1 tháng 1996 năm 1997. Cuốn tiểu thuyết đã giành được giải thưởng Locus năm 1997 và được đề cử cho cả Giải thưởng Tinh vân năm 1997 và Giải thưởng Giả tưởng Thế giới năm 1997.
+                                         Tiểu thuyết Blood of the Dragon, bao gồm các chương của Daenerys Targaryen trong tiểu thuyết, đã giành giải Hugo năm 2011 cho Tiểu thuyết hay nhất. Vào tháng 1 năm 2011,
+                                         cuốn tiểu thuyết đã trở thành cuốn sách bán chạy nhất của New York Times và đạt vị trí số 1 trong danh sách vào tháng 9 năm 2004.
+                                    </p>
+                                </div>
+                                <div class="section">
+                                    <h3 class="section-header">Liên Kết Ngoài Multi-library:</h3>
+                                    <ul class="section-list">
+                                        <li class="section-item">
+                                            <a href="http://www.georgerrmartin.com/grrm_book/a-game-of-thrones-a-song-of-ice-and-fire-book-one/" class="section-link">Author's book page</a>
+                                        </li>
+                                        <li class="section-item">
+                                            <a href="https://en.wikipedia.org/wiki/A_Game_of_Thrones" class="section-link">Wikipedia entry</a>
+                                        </li>
+                                        <li class="section-item">
+                                            <a href="George R.R. Martin Is Also Bummed Game of Thrones Went Beyond the Books" class="section-link">George R.R. Martin Is Also Bummed Game of Thrones Went Beyond the Books</a>
+                                        </li>
+                                        <li class="section-item">
+                                            <a href="https://winteriscoming.net/" class="section-link">winteriscoming.net</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-on-mobile-and-tablet hide-on-pc">
+                    <div class="col c-12 m-12 col-mobile">
+                        <div class="book-title-and-author">
+                            <h1 class="book-header__title">
+                                A Game of Thrones
+                            </h1>
+                            <h2 class="book-header__author">
+                                By
+                                <a href="" class="book-header__author-link">George R. R. Martin</a>
+                            </h2>
+                            <div class="reader-stats__rating reader-stats__rating-mobile">
+                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="reader-stats__ratingValue">4.27</span>
+                            </div>
+                        </div>
+                        <div class="read-options">
+                            <div class="read-options__box-img">
+                                <img src="../images/sach4.jpg" alt="" class="read-options__img">
+                            </div>
+                            <div class="read-options__button">
+                                <a href="" class="read-options__link">
+                                    <span class="read-options__icon">
+                                        <i class="fa-solid fa-book-open-reader"></i>
+                                    </span>
+                                    <span class="read-options__label">
+                                        Đọc
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="read-options__button">
+                                <a href="" class="read-options__link">
+                                    <span class="read-options__icon">
+                                        <i class="fa-solid fa-book"></i>
+                                    </span>
+                                    <span class="read-options__label">
+                                        Mượn Sách
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="read-options__button">
+                                <a href="" class="read-options__link">
+                                    <span class="read-options__icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                    <span class="read-options__label">
+                                        Theo Dõi
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="readers-stats__wrapper">
+                            <ul class="readers-stats">
+                                <li class="reading-log-stats">2989 Muốn đọc</li>
+                                <li class="reading-log-stats reading-log-stat">171 Hiện đang đọc</li>
+                                <li class="reading-log-stats">396 Đã đọc</li>
+                            </ul>
+                            <div class="read-options__modal-link">
+                                <div>
+                                    <a href="" class="read-options__icon-link">
+                                        <img src="../images/reviews.svg" alt="" class="icon-link__img">
+                                        <div class="icon-link__text">
+                                            Review
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                  <div class="rating">
+                                        <input value="star-1" name="star-radio" id="star-mobile-1" type="radio">
+                                        <label for="star-mobile-1">
+                                          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+                                        </label>
+                                        <input value="star-1" name="star-radio" id="star-mobile-2" type="radio">
+                                        <label for="star-mobile-2">
+                                          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+                                        </label>
+                                        <input value="star-1" name="star-radio" id="star-mobile-3" type="radio">
+                                        <label for="star-mobile-3">
+                                          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+                                        </label>
+                                        <input value="star-1" name="star-radio" id="star-mobile-4" type="radio">
+                                        <label for="star-mobile-4">
+                                          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+                                        </label>
+                                        <input value="star-1" name="star-radio" id="star-mobile-5" type="radio">
+                                        <label for="star-mobile-5">
+                                          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+                                        </label>
+                                  </div>
+                                  <div class="icon-link__text-rating">
+                                    Đánh Giá
+                                  </div>
+                                </div>
+                                <div>
+                                    <a href="" class="read-options__icon-link">
+                                        <img src="../images/notes.svg" alt="" class="icon-link__img">
+                                        <div class="icon-link__text">
+                                            Ghi Chú
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-decription">
+                          <input type="checkbox" name="" id="book-decription__show-mobile">
+                          <p class="book-decription__content">
+                              Đây là tập đầu tiên trong chu kỳ tiểu thuyết tuyệt vời của George R. R. Martin bao gồm A Clash of Kings và A Storm of Swords.
+                               Nhìn chung, bộ truyện này bao gồm một kiệt tác giả tưởng hiện đại đích thực,
+                               tập hợp những gì tốt nhất mà thể loại này cung cấp.
+                               Ma thuật, bí ẩn, mưu mô, lãng mạn và phiêu lưu lấp đầy những trang này và đưa chúng
+                          </p>
+                          <div class="book-decription__container book-decription__none">
+                            <p class="book-decription__content">
+                              A GAME OF THRONES
+                          </p>
+                          <p class="book-decription__content">
+                              Cách đây rất lâu, trong một thời gian bị lãng quên, một sự kiện phi tự nhiên đã khiến các mùa mất cân bằng.
+                               Ở một vùng đất mà mùa hè có thể kéo dài hàng thập kỷ và mùa đông suốt đời,
+                               rắc rối đang âm ỉ. Cái lạnh đang quay trở lại,
+                               và trong những chất thải đóng băng ở phía bắc Winterfell,
+                               các thế lực nham hiểm và siêu nhiên đang tập trung bên ngoài Bức tường bảo vệ của vương quốc. Ở trung tâm của cuộc xung đột là Starks of Winterfell, một gia đình khắc nghiệt và kiên cường như vùng đất mà họ sinh ra. Quét từ một vùng đất lạnh lẽo tàn bạo đến một vương quốc mùa hè xa xôi của sự phong phú của epicurean, đây là một câu chuyện về các lãnh chúa và phụ nữ, binh lính và phù thủy, sát thủ và tên khốn, những người đến với nhau trong một thời gian của điềm báo nghiệt ngã.
+                          </p>
+                          <p class="book-decription__content">
+                              Ở đây một nhóm chiến binh bí ẩn mang thanh kiếm không có kim loại của con người;
+                               một bộ lạc của những con hoang dã hung dữ mang theo con người vào sự điên cuồng;
+                               một hoàng tử rồng trẻ tuổi độc ác trao đổi em gái của mình để giành lại ngai vàng của mình;
+                               Và một người phụ nữ quyết tâm thực hiện những cuộc hành trình nguy hiểm nhất.
+                               Giữa những âm mưu và âm mưu phản công, bi kịch và phản bội, chiến thắng và khủng bố, số phận của Starks, đồng minh và kẻ thù của họ bị treo lơ lửng một cách nguy hiểm, khi mỗi người cố gắng giành chiến thắng trong cuộc xung đột chết chóc nhất: trò chơi vương quyền.
+                               --bìa sau
+                          </p> 
+                        </div>
+                        <label for="book-decription__show-mobile">Đọc Thêm</label>
+                      </div>
+                        <div class="book-info">
+                            <div class="book-info__item">
+                                <p class="book-info__title">
+                                    Ngày xuất bản
+                                </p>
+                                <span class="book-info__text">
+                                    May 28, 2002
+                                </span>
+                            </div>
+                            <div class="book-info__item">
+                                <p class="book-info__title">
+                                    Nhà xuất bản
+                                </p>
+                                <span class="book-info__text">
+                                    BOOK Bantam
+                                </span>
+                            </div>
+                            <div class="book-info__item">
+                                <p class="book-info__title">
+                                    Ngôn ngữ
+                                </p>
+                                <span class="book-info__text">
+                                    Tiếng Anh
+                                </span>
+                            </div>
+                            <div class="book-info__item">
+                                <p class="book-info__title">
+                                    Trang
+                                </p>
+                                <span class="book-info__text">
+                                    704
+                                </span>
+                            </div>
+                        </div>
+                        <div class="previews-languages">
+                            <h6 class="previews-languages__label">Bản xem trước có sẵn trong:</h6>
+                            <a href="" class="previews-languages__link">Tiếng Anh</a>,
+                            <a href="" class="previews-languages__link">Tiếng Nhật</a>,
+                            <a href="" class="previews-languages__link">Tiếng Pháp</a>.
+                        </div>
+                        <div class="subject-content">
+                            <div class="link-box">
+                                <h6 class="subject-content__title">Thể Loại: </h6>
+                                <a href="" class="subject-content__link">Hành Động</a>,
+                                <a href="" class="subject-content__link">Tiểu Thuyết</a>,
+                                <a href="" class="subject-content__link">Sử Thi</a>,
+                                <a href="" class="subject-content__link">Phiêu Lưu</a>.
+                            </div>
+                            <div class="link-box">
+                                <h6 class="subject-content__title">Nhân Vật Chính: </h6>
+                                <a href="" class="subject-content__link">Illyrio</a>,
+                                <a href="" class="subject-content__link">Jon Arryn</a>,
+                                <a href="" class="subject-content__link">Robet Baratheon</a>,
+                                <a href="" class="subject-content__link">Eddard Stark</a>.
+                                ...
+                            </div>
+                            <div class="link-box">
+                                <h6 class="subject-content__title">Địa Điểm: </h6>
+                                <a href="" class="subject-content__link">Winterfell</a>,
+                                <a href="" class="subject-content__link">King's Landing</a>,
+                                <a href="" class="subject-content__link">Seven Kingdoms</a>,
+                                <a href="" class="subject-content__link">Westeros</a>.
+                            </div>
+                            
+                        </div>
+                        <div class="book-details" id="book-details2">
+                            <h2 class="details-title">Chi Tiết Sách</h2>
+                            <hr>
+                            <div class="section">
+                                <h3 class="section-header">Xuất bản tại</h3>
+                                <p class="section-text">New York, Hoa Kỳ</p>
+                            </div>
+                            <div class="section">
+                                <h3 class="section-header">Ghi CHú Phiên Bản</h3>
+                                <p class="section-text">HOA KỲ/CANADA</p>
+                                <dl>
+                                    <dt>Loạt:</dt>
+                                    <dd>A Song of Ice and Fire, Quyển Một</dd>
+                                    <dt>Ngày bản quyền:</dt>
+                                    <dd>1996</dd>
+                                </dl>
+                            </div>
+                            <div class="section">
+                                <h3 class="section-header">Ghi Chú Phiên Bản</h3>
+                                <dl>
+                                    <dt>Lớp thập phân Dewey:</dt>
+                                    <dd>813.54</dd>
+                                    <dt>Thư viện Quốc hội:</dt>
+                                    <dd>95-43963</dd>
+                                </dl>
+                            </div>
+                            <div class="section">
+                                <h3 class="section-header">Đóng góp</h3>
+                                <dl>
+                                    <dt>Ảnh bìa:</dt>
+                                    <dd>Stephen Youll</dd>
+                                    <dt>Thiết kế bìa:</dt>
+                                    <dd>Jaime S. Warren Youll</dd>
+                                    <dt>Người vẽ bản đồ:</dt>
+                                    <dd>James Sinclair</dd>
+                                    <dt>Nhà thiết kế sách:</dt>
+                                    <dd>James Sinclair</dd>
+                                    <dt>Bản vẽ:</dt>
+                                    <dd>Virginia Norey</dd>
+                                </dl>
+                            </div>
+                            <div class="section">
+                                <h3 class="section-header">Mô tả:</h3>
+                                <p class="section-text section-detail">
+                                    A Game of Thrones là cuốn tiểu thuyết đầu tiên trong A Song of Ice and Fire,
+                                     một loạt tiểu thuyết giả tưởng của tác giả người Mỹ George R. R. Martin.
+                                     Nó được xuất bản lần đầu tiên vào ngày 1 tháng 1996 năm 1997. Cuốn tiểu thuyết đã giành được giải thưởng Locus năm 1997 và được đề cử cho cả Giải thưởng Tinh vân năm 1997 và Giải thưởng Giả tưởng Thế giới năm 1997.
+                                     Tiểu thuyết Blood of the Dragon, bao gồm các chương của Daenerys Targaryen trong tiểu thuyết, đã giành giải Hugo năm 2011 cho Tiểu thuyết hay nhất. Vào tháng 1 năm 2011,
+                                     cuốn tiểu thuyết đã trở thành cuốn sách bán chạy nhất của New York Times và đạt vị trí số 1 trong danh sách vào tháng 9 năm 2004.
+                                </p>
+                            </div>
+                            <div class="section">
+                                <h3 class="section-header">Liên Kết Ngoài Multi-library:</h3>
+                                <ul class="section-list">
+                                    <li class="section-item">
+                                        <a href="http://www.georgerrmartin.com/grrm_book/a-game-of-thrones-a-song-of-ice-and-fire-book-one/" class="section-link">Author's book page</a>
+                                    </li>
+                                    <li class="section-item">
+                                        <a href="https://en.wikipedia.org/wiki/A_Game_of_Thrones" class="section-link">Wikipedia entry</a>
+                                    </li>
+                                    <li class="section-item">
+                                        <a href="George R.R. Martin Is Also Bummed Game of Thrones Went Beyond the Books" class="section-link">George R.R. Martin Is Also Bummed Game of Thrones Went Beyond the Books</a>
+                                    </li>
+                                    <li class="section-item">
+                                        <a href="https://winteriscoming.net/" class="section-link">winteriscoming.net</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment-container" id="comment-container">
+                    <h3 class="comment-title">Bình Luận(2)</h3>
+                    <input type="text" class="comment-input" placeholder="Viết bình luận tại đây.">
+                    <div class="comment-box">
+                        <div class="comment-box__avatar">
+                            <img src="../images/background.jpg" alt="" class="comment-box__img">
+                        </div>
+                        <div class="comment-box__info">
+                            <span class="comment-box__name">Jon B</span>
+                            <a href="" class="comment-box__time">7 Tháng Trước</a>
+                            <p class="comment-box__content">tuyệt vời quá tôi chưa đọc cuốn sachs nào hay như này bao giờ tại sao tôi không đọc nó sớm chứ.</p>
+                            <div class="comment-box__action">
+                                <i class="comment-box__like fa-regular fa-thumbs-up"></i>
+                                19.904
+                                <i class="comment-box__dislike fa-regular fa-thumbs-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-box">
+                        <div class="comment-box__avatar">
+                            <img src="../images/background.jpg" alt="" class="comment-box__img">
+                        </div>
+                        <div class="comment-box__info">
+                            <span class="comment-box__name">Jon A</span>
+                            <a href="" class="comment-box__time">2 Tháng Trước</a>
+                            <p class="comment-box__content">Sách rất hay, rất ý nghĩa các bạn nên đọc nha :3</p>
+                            <div class="comment-box__action">
+                                <i class="comment-box__like fa-regular fa-thumbs-up"></i>
+                                1.557
+                                <i class="comment-box__dislike fa-regular fa-thumbs-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-related" id="book-related">
+                    <div class="book-related__title">
+                        <h2 class="book-related__title-h2">Những sách bạn có thể thích</h2>
+                    </div>
+                    <ul id="autoWidth-3" class="cs-hidden slider-related">
+                        <!--slider 1------>
+                        <li class="item-a">
+                          <div class="swiper-slide">
+                            <div class="slider-box slider-box-related">
+                            <p class="time">New</p>
+                            <div class="img-box related-box__img">
+                              <img src="../images/sach1.jpg" alt="" title="A Court of Mist and Fury">
+                            </div>
+                            <p class="name">A Court of Mist and Fury<br>
+                              <a href="#" class="authur">Sarah J. Maas</a>
+                            </p>
+                            <div class="cart">
+                              <a href="#">Read</a>
+                            </div>
+                            </div>
+                          </div>         
+                        </li>
+                        <!--slider 2------>
+                        <li class="item-b">
+                          <div class="swiper-slide">
+                            <div class="slider-box slider-box-related">
+                            <p class="time">New</p>
+                            <div class="img-box related-box__img">
+                              <img src="../images/sach2.jpg" alt="" title="Las Aventuras de Sherlock Holmes">
+                            </div>
+                            <p class="name">Las Aventuras de Sherlock Holmes<br>
+                              <a href="#" class="authur"> Arthur Conan Doyle</a>
+                            </p>
+                            <div class="cart">
+                              <a href="#">Read</a>
+                            </div>
+                            </div>
+                          </div>         
+                        </li>
+                        <!--slider 3------>
+                        <li class="item-c">
+                          <div class="swiper-slide">
+                            <div class="slider-box slider-box-related">
+                            <p class="time">New</p>
+                            <div class="img-box related-box__img">
+                              <img src="../images/sach3.jpg" alt="" title="Laurie Halse Anderson">
+                            </div>
+                            <p class="name">Laurie Halse Anderson<br>
+                              <a href="#" class="authur">Wendy J. Glenn</a>
+                            </p>
+                            <div class="cart">
+                              <a href="#">Borrow</a>
+                            </div>
+                            </div>
+                          </div>         
+                        </li>
+                        <!--slider 4------>
+                        <li class="item-d">
+                          <div class="swiper-slide">
+                            <div class="slider-box slider-box-related">
+                            <p class="time">New</p>
+                            <div class="img-box related-box__img">
+                              <img src="../images/sach4.jpg" alt="" title="A Game of Thrones">
+                            </div>
+                            <p class="name">A Game of Thrones<br>
+                              <a href="#" class="authur">George R. R. Martin</a>
+                            </p>
+                            <div class="cart">
+                              <a href="#">Read</a>
+                            </div>
+                            </div>
+                          </div>         
+                        </li>
+                        <!--slider 5------>
+                        <li class="item-e">
+                          <div class="swiper-slide">
+                            <div class="slider-box slider-box-related">
+                            <p class="time">New</p>
+                            <div class="img-box related-box__img">
+                              <img src="../images/sach5.jpg" alt="" title="All That is Gone">
+                            </div>
+                            <p class="name">All That is Gone<br>
+                              <a href="#" class="authur">Pramoedya Ananta Toer</a>
+                            </p>
+                            <div class="cart">
+                              <a href="#">Borrow</a>
+                            </div>
+                            </div>
+                          </div>         
+                        </li>
+                        <!--slider 6------>
+                        <li class="item-f">
+                          <div class="swiper-slide">
+                            <div class="slider-box slider-box-related">
+                            <p class="time">New</p>
+                            <div class="img-box related-box__img">
+                              <img src="../images/sach6.jpg" alt="" title="Kitecraft and kite tournaments">
+                            </div>
+                            <p class="name">Kitecraft and kite tournaments<br>
+                              <a href="#" class="authur">Miller, Charles M</a>
+                            </p>
+                            <div class="cart">
+                              <a href="#">Read</a>
+                            </div>
+                            </div>
+                          </div>         
+                        </li>
+                        <!--slider 7------>
+                        <li class="item-g">
+                          <div class="swiper-slide">
+                            <div class="slider-box slider-box-related">
+                            <p class="time">New</p>
+                            <div class="img-box related-box__img">
+                              <img src="../images/sach7.jpg" alt="" title="Searching for the Sound">
+                            </div>
+                            <p class="name">Searching for the Sound<br>
+                              <a href="#" class="authur">Phil Lesh</a>
+                            </p>
+                            <div class="cart">
+                              <a href="#">Borrow</a>
+                            </div>
+                            </div>
+                          </div>         
+                        </li>
+                        <!--slider 8------>
+                        <li class="item-h">
+                          <div class="swiper-slide">
+                            <div class="slider-box slider-box-related">
+                            <p class="time">New</p>
+                            <div class="img-box related-box__img">
+                              <img src="../images/sach8.jpg" alt="" title="Starring Jules: In Drama-Rama">
+                            </div>
+                            <p class="name">Starring Jules: In Drama-Rama<br>
+                              <a href="#" class="authur">Beth Ain</a>
+                            </p>
+                            <div class="cart">
+                              <a href="#">read</a>
+                            </div>
+                            </div>
+                          </div>         
+                        </li>
+                    </ul> 
+                    <div class="book-related__title">
+                        <h2 class="book-related__title-h2">Những sách bạn có thể thích</h2>
+                    </div>
+                    <ul id="autoWidth-4" class="cs-hidden slider-related">
+                        <!--slider 1------>
+                        <li class="item-a">
+                          <div class="swiper-slide">
+                            <div class="slider-box slider-box-related">
+                            <p class="time">New</p>
+                            <div class="img-box related-box__img">
+                              <img src="../images/sach1.jpg" alt="" title="A Court of Mist and Fury">
+                            </div>
+                            <p class="name">A Court of Mist and Fury<br>
+                              <a href="#" class="authur">Sarah J. Maas</a>
+                            </p>
+                            <div class="cart">
+                              <a href="#">Read</a>
+                            </div>
+                            </div>
+                          </div>         
+                        </li>
+                        <!--slider 2------>
+                        <li class="item-b">
+                          <div class="swiper-slide">
+                            <div class="slider-box slider-box-related">
+                            <p class="time">New</p>
+                            <div class="img-box related-box__img">
+                              <img src="../images/sach2.jpg" alt="" title="Las Aventuras de Sherlock Holmes">
+                            </div>
+                            <p class="name">Las Aventuras de Sherlock Holmes<br>
+                              <a href="#" class="authur"> Arthur Conan Doyle</a>
+                            </p>
+                            <div class="cart">
+                              <a href="#">Read</a>
+                            </div>
+                            </div>
+                          </div>         
+                        </li>
+                        <!--slider 3------>
+                        <li class="item-c">
+                          <div class="swiper-slide">
+                            <div class="slider-box slider-box-related">
+                            <p class="time">New</p>
+                            <div class="img-box related-box__img">
+                              <img src="../images/sach3.jpg" alt="" title="Laurie Halse Anderson">
+                            </div>
+                            <p class="name">Laurie Halse Anderson<br>
+                              <a href="#" class="authur">Wendy J. Glenn</a>
+                            </p>
+                            <div class="cart">
+                              <a href="#">Borrow</a>
+                            </div>
+                            </div>
+                          </div>         
+                        </li>
+                        <!--slider 4------>
+                        <li class="item-d">
+                          <div class="swiper-slide">
+                            <div class="slider-box slider-box-related">
+                            <p class="time">New</p>
+                            <div class="img-box related-box__img">
+                              <img src="../images/sach4.jpg" alt="" title="A Game of Thrones">
+                            </div>
+                            <p class="name">A Game of Thrones<br>
+                              <a href="#" class="authur">George R. R. Martin</a>
+                            </p>
+                            <div class="cart">
+                              <a href="#">Read</a>
+                            </div>
+                            </div>
+                          </div>         
+                        </li>
+                        <!--slider 5------>
+                        <li class="item-e">
+                          <div class="swiper-slide">
+                            <div class="slider-box slider-box-related">
+                            <p class="time">New</p>
+                            <div class="img-box related-box__img">
+                              <img src="../images/sach5.jpg" alt="" title="All That is Gone">
+                            </div>
+                            <p class="name">All That is Gone<br>
+                              <a href="#" class="authur">Pramoedya Ananta Toer</a>
+                            </p>
+                            <div class="cart">
+                              <a href="#">Borrow</a>
+                            </div>
+                            </div>
+                          </div>         
+                        </li>
+                        <!--slider 6------>
+                        <li class="item-f">
+                          <div class="swiper-slide">
+                            <div class="slider-box slider-box-related">
+                            <p class="time">New</p>
+                            <div class="img-box related-box__img">
+                              <img src="../images/sach6.jpg" alt="" title="Kitecraft and kite tournaments">
+                            </div>
+                            <p class="name">Kitecraft and kite tournaments<br>
+                              <a href="#" class="authur">Miller, Charles M</a>
+                            </p>
+                            <div class="cart">
+                              <a href="#">Read</a>
+                            </div>
+                            </div>
+                          </div>         
+                        </li>
+                        <!--slider 7------>
+                        <li class="item-g">
+                          <div class="swiper-slide">
+                            <div class="slider-box slider-box-related">
+                            <p class="time">New</p>
+                            <div class="img-box related-box__img">
+                              <img src="../images/sach7.jpg" alt="" title="Searching for the Sound">
+                            </div>
+                            <p class="name">Searching for the Sound<br>
+                              <a href="#" class="authur">Phil Lesh</a>
+                            </p>
+                            <div class="cart">
+                              <a href="#">Borrow</a>
+                            </div>
+                            </div>
+                          </div>         
+                        </li>
+                        <!--slider 8------>
+                        <li class="item-h">
+                          <div class="swiper-slide">
+                            <div class="slider-box slider-box-related">
+                            <p class="time">New</p>
+                            <div class="img-box related-box__img">
+                              <img src="../images/sach8.jpg" alt="" title="Starring Jules: In Drama-Rama">
+                            </div>
+                            <p class="name">Starring Jules: In Drama-Rama<br>
+                              <a href="#" class="authur">Beth Ain</a>
+                            </p>
+                            <div class="cart">
+                              <a href="#">read</a>
+                            </div>
+                            </div>
+                          </div>         
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Chăm Sóc khách Hàng</h3>
+                        <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Tư Vấn Khách Hàng</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Hướng Dẫn Mượn Trả</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Hỗ trợ người dùng</a>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                    <h3 class="footer__heading">Giới Thiệu</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Giới Thiệu</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Bản Quyền</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Điều Khoản</a>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                    <h3 class="footer__heading">Multi-library</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                          <a href="trangchu.html" class="footer-item__link">Trang Chủ</a>
+                        </li>
+                        <li class="footer-item">
+                          <a href="search.html" class="footer-item__link">Tìm Kiếm</a>
+                        </li>
+                        <li class="footer-item">
+                          <a href="profile.html" class="footer-item__link">Hồ Sơ</a>
+                        </li>
+                        <li class="footer-item">
+                          <a href="history.html" class="footer-item__link">Lịch Sử</a>
+                        </li>
+                        <li class="footer-item">
+                          <a href="follow.html" class="footer-item__link">Đang Theo Dõi</a>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                    <h3 class="footer__heading">Theo Dõi</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="https://www.facebook.com/profile.php?id=100014728930650" class="footer-item__link">
+                            <i class="footer-item__icon fab fa-facebook"></i>
+                            Facebook
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="https://www.instagram.com/xtuyen.04/" class="footer-item__link">
+                            <i class="footer-item__icon fab fa-instagram"></i>
+                            Instagram
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="https://www.linkedin.com/" class="footer-item__link">
+                            <i class="footer-item__icon fab fa-linkedin"></i>
+                            Linkedin
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="col l-2-4 m-8 c-12">
+                    <h3 class="footer__heading">Ủng Hộ Chúng Tôi</h3>
+                    <div class="footer__bank">
+                        <img src="../images/QR.jpg" alt="QR Code" class="footer__bank-qr"> 
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../JS/lightslider.js"></script>
+    <script src="../JS/app.js"></script>
+</body>
+</html>

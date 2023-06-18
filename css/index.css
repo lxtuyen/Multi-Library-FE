@@ -32,7 +32,10 @@ h2{
     text-align: center;
     margin-top: 20px;
 }
-a {
+.btn-login{
+    color: #000;
+}
+a{
     text-decoration: none;
     margin-left: 5px;
 }

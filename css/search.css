@@ -248,7 +248,7 @@
     margin-bottom: 20px;
 }
 .home-product-item{
-    background-color: transparent;
+    background-color: #1111;
     margin-top: 10px;
     position: relative;
     border-radius: 2px;
@@ -317,7 +317,7 @@ i.home-product-item__like-icon-fill{
     display: none;
 }
 .home-product-item__rating{
-    font-size: 9px;
+   font-size: 9px;
    transform-origin: right;
    color: #d5d5d5;
    margin-left: auto;

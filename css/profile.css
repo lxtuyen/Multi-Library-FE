@@ -1,0 +1,240 @@
+.container-profile{
+    margin-top: 90px;
+    display: flex;
+}
+.container-profile-left{
+    text-align: center;
+    border-radius: 5px;
+    background-color: #F4F3F4;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.container-profile-right{
+    margin: 20px;
+}
+.nav-tabs{
+    list-style: none;
+}
+.nav-tabs-wrap{
+    border-top: 1px solid #D5D5D5;
+}
+.nav-tabs__link{
+    text-decoration: none;
+    color: #595959;
+    padding: 25px;
+    display: block;
+    font-size: 18px;
+}
+.nav-tabs__link:hover{
+    background-color: var(--secondary-light);
+    padding-left: 10px;
+}
+.tabs-content-wrap{
+    color: #666666;
+    margin: 5px;
+}
+.tabs-content-title{
+    padding-left: 5px;
+    padding-bottom: 10px;
+    color: #777777;
+}
+.tabs-content-wrap hr{
+    margin: 5px;
+}
+.tabs-content-wrap span{
+    padding: 10px;
+}
+.table-bookmark{
+    border-collapse: collapse;
+    color: #212529;
+    width: 100%;
+}
+.tbody-book-name{
+    display: flex;
+    margin-left: 15px;
+}
+.item-thumb{
+    width: 25%;
+}
+.item-thumb__img{
+    width: 100%;
+    padding-top: 10px;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+thead{
+    background-color: #EBEBEB;
+    border-radius: 5px;
+}
+thead tr th{
+    padding: 10px;
+}
+.thead-name{
+    width: 70%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.reader-stats__rating{
+    color: #6666;
+}
+.thead-post-on{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+tbody tr {
+    text-align: center;
+    border-bottom: 1px solid #a3a1a1;
+}
+.item-info{
+    padding: 20px;
+}
+.item-info-att{
+    padding: 5px;
+}
+.post-on{
+    right: -40px;
+    display: flex;
+    position: relative;
+    top: -70px;
+}
+.post-on h4{
+    padding-right: 5px;
+}
+.item-info__btn{
+    width: 50%;
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 15px;
+    color: #F4F3F4;
+    background-color: #025C8F;
+    border-radius: 5px;
+    border: transparent;
+    cursor: pointer;
+}
+.item-info__btn-delete{
+    background-color: #e97451;
+}
+/*              profile            */
+.tab-item{
+    padding: 0 0 30px 10px;
+    border-bottom: 1px solid #a3a1a1;
+}
+.choose-avatar{
+    width: 20%;
+}
+.choose-avatar__img {
+    border-radius: 50%;
+    width: 100%;
+    height: 160px;
+}
+.upload__btn {
+    cursor: pointer;
+    padding: 10px;
+    width: 15%;
+    display: block;
+    top: 20px;
+    position: relative;
+    text-align: center;
+    background-color: #598FBF;
+    right: -25px;
+    border-radius: 5px;
+    color: #f4f3f4;
+}
+.tab-item-title{
+    padding: 10px 0;
+}
+.form-group{
+    margin-bottom: 10px;
+    display: flex;
+}
+.form-group-label{
+    width: 25%;
+    margin: 0 0 8px;
+    color: #999999;
+    padding: 0px 15px;
+}
+.show {
+    font-size: 17px;
+    color: #333333;
+    font-weight: 600;
+}
+.form-group__intput{
+    background-color: #E8F0FE;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: transparent;
+}
+.tab-item__submit{
+    cursor: pointer;
+    background-color: #598FBF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #f4f3f4;
+    border: transparent;
+    margin-left: 15px;
+}
+.border-bottom-none,
+.tab-item__border-none{
+    border-bottom: none;
+}
+.tab-item-container{
+    padding: 7px;
+}
+/* mobile: width < 740px */
+@media screen  and (max-width: 46.1875em){
+    .tbody-book-name {
+       display: block;
+    }
+    .item-thumb {
+        margin-left: 80px;
+        width: 50%;
+    }
+    .post-on {
+        right: auto;
+        top: auto;
+        bottom: -50px;
+        font-size: 15px;
+    }
+    .post-on h4 {
+        width: 105px;
+    }
+    .container-profile-right {
+        margin: 0;
+    }
+    .choose-avatar {
+        margin-left: 150px;
+        width: 35%;
+    }
+    .upload__btn {
+        right: -180px;
+        width: 20%;
+    }
+    .form-group-label {
+        width: 38%;
+    }
+}
+/* tablet: width >= 740px and width < 1024px*/
+@media screen  and (min-width: 46.25em) and (max-width:63.9375em){
+    .post-on {
+        font-size: 15px;
+        right: 0;
+    }
+    .form-group-label {
+        width: 30%;
+    }
+    .choose-avatar {
+        width: 25%;
+    }
+    .upload__btn {
+        right: -30px;
+    }
+    .tab-item-container{
+        padding: 10px;
+    }
+}
+/* mobile and tablet: width > 1024px */
+@media screen  and (max-width: 63.9375em){
+
+}
