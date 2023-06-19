@@ -894,4 +894,38 @@ footer{
         position: absolute;
     }
 }
+@media screen and (max-width: 375px){
+    .card-text .small{
+        font-size: 0.9rem;
+    }
+    .name{
+        font-size: 9px;
+        margin-top: 0px;
+    }
+    .slider-box {
+        height: 320px;
+        width: 153px;
+        margin: 20px 0 10px 15px;
+    }
+    .authur{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    .card-text .title{
+        font-size: 0.9rem;
+    }
+    .card-text .small{
+        font-size: 0.9rem;
+    }
+    .card-text .title{
+        font-size: 0.9rem;
+    }
+    .carousel-item {
+        height: 240px;
+        width: 145px;
+    }
+    .title h1{
+        font-size: 23px;
+    }
+}
 
