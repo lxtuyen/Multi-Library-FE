@@ -9,8 +9,8 @@ section{
     align-items: center;
     min-height: 100vh;
     width: 100%;
-   /* background:url('../images/background.jpg')no-repeat;*/
-   background: linear-gradient(to right, #c7b460,#33707a);
+   background:url('../images/background.jpg')no-repeat;
+   /*background: linear-gradient(to right, #c7b460,#33707a); */
     background-position: center;
     background-size: cover;
 }
