@@ -56,13 +56,17 @@
     margin-left: 15px;
 }
 .item-thumb{
-    width: 25%;
+    width: 35%;
 }
 .item-thumb__img{
     width: 100%;
     padding-top: 10px;
-    border-radius: 5px;
+    border-radius: 25px;
     padding-bottom: 15px;
+}
+.item-thumb__img:hover{
+    transform: scale(1.02);
+    transition: all ease 0.8s;
 }
 thead{
     background-color: #EBEBEB;
@@ -214,6 +218,9 @@ tbody tr {
     .form-group-label {
         width: 38%;
     }
+    .tab-item__submit{
+        margin-left: 174px;
+    }
 }
 /* tablet: width >= 740px and width < 1024px*/
 @media screen  and (min-width: 46.25em) and (max-width:63.9375em){
@@ -237,4 +244,33 @@ tbody tr {
 /* mobile and tablet: width > 1024px */
 @media screen  and (max-width: 63.9375em){
 
+}
+@media screen  and (max-width: 375px){
+    .tab-item__submit {
+        margin-left: 135px;
+        margin-top: 10px;
+        width: 30%;
+    }
+    .choose-avatar {
+        margin-left: 110px;
+        width: 45%;
+    }
+    .upload__btn {
+        right: -140px;
+        width: 30%;
+    }
+    .form-group-label {
+    font-size: 11.8px;
+    width: 40%;
+    }
+    .show {
+        font-size: 16px;
+    }
+    .item-thumb {
+        margin-left: 15px;
+        width: 85%;
+    }
+    .item-info__btn {
+        width: 80%;
+    }
 }
