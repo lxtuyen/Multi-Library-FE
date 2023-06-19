@@ -588,7 +588,6 @@ footer{
 }
 .nav__mobile-header{
     border-bottom:2px solid var(--secondary-light);
-    padding-bottom: 5px;
 }
 .nav__mobile-profile{
     margin: 10px;
