@@ -208,6 +208,7 @@
     top: 95px;
 }
 .book-navbar__item--active{
+    margin-left: 2px;
     color: #025C8F;
     border-bottom: 2px solid #025C8F;
 }
@@ -440,9 +441,6 @@
     right: 0;
     background-color: #fff;
 }
-.book-link__item--active{
-    border-left: none;
-}
 .row-on-mobile-and-tablet{
     top: 40px;
     position: relative;
@@ -488,6 +486,9 @@
     }
     .slider-box-related{
         width: 196px;
+    }
+    .book-link__item--active {
+        border-left: none;
     }
 }
 /* mobile and tablet: width > 1024px */
@@ -547,7 +548,10 @@
     }   
     .subject-content__link {
         font-size: 13px;
-    }    
+    }  
+    .icon-link__text-rating {
+        color: #595959;
+    } 
 }
 /* tablet: width >= 740px and width < 1024px*/
 @media screen  and (min-width: 46.25em) and (max-width:63.9375em){
@@ -563,4 +567,50 @@
     .hide-on-pc{
         display: none;
     } 
+}
+@media screen  and (max-width: 375px){
+    .book-navbar__link{
+        font-size: 8.1px;
+    }
+    .reading-log-stats {
+        font-size: 11px;
+        padding: 15px;
+    }
+    .rating {
+        margin-left: 30px;
+    }
+    .rating svg {
+        width: 1.5rem;
+        height: 1.8rem;
+    }
+    .icon-link__text-rating {
+        font-size: 16px;
+        margin-left: 65px;
+    }
+    .book-info__text {
+        font-size: 10px;
+    }
+    .book-info__title {
+        font-size: 11px;
+    }
+    .book-info__item {
+        height: 60px;
+    }
+    .previews-languages__label {
+        font-size: 11px;
+    }
+    .previews-languages__link {
+        font-size: 11px;
+        margin-left: 5px;
+    }
+    .subject-content__title {
+        font-size: 11px;
+    }
+    .subject-content__link {
+        font-size: 11px;
+        margin-left: 5px;
+    }
+    .book-related__title-h2{
+        font-size: 21px;
+    }
 }
