@@ -345,8 +345,10 @@
     margin: 5px;
 }
 .section-detail{
-    font-family: "Lucida Grande",Verdana,Geneva,Helvetica,Arial,sans-serif;
-    margin: 15px 10px;
+    text-align: justify;
+    font-family: "Lucida Grande",Verdana,Helvetica,Arial,sans-serif;
+    margin-top: 10px;
+    padding-right: 5px;
 }
 .section-list{
     list-style: none;
