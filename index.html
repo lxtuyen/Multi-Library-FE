@@ -6,27 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng Nhập | Multi-library</title>
     <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <script src="./JS/Jquery.js"></script> 
     <link rel="shortcut icon" href="./images/logo3.png" type="image/x-icon">
 </head>
 <body>
     <section>
         <div class="form-box">
             <div class="form-value">
-                <form action="">
+                <form action="" onsubmit="login()">
                     <h2>Đăng Nhập</h2>
                     <div class="inputbox">
-                        <input type="email" required>
+                        <input type="text" required id="username">
+                        <label for="">Tên Đăng Nhập</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="email" required id="email">
                         <label for="">Email</label>
                     </div>
                     <div class="inputbox">
-                        <input type="password" required>
+                        <input type="password" required id="password">
                         <label for="">Mật Khẩu</label>
                     </div>
                     <div class="forget">
                         <label for=""><input type="checkbox">Lưu mật khẩu</label>
                         <a href="#"> Quên mật khẩu</a>
                     </div>
-                    <button><a class="btn-login" href="trangchu.html">Đăng Nhập</a></button>
+                    <button>Đăng Nhập</button>
                     <div class="register">
                         <p>
                             Chưa có tài khoản
@@ -38,4 +43,6 @@
         </div>
     </section>
 </body>
+    <script src="./JS/app.js"></script>
 </html>
+
