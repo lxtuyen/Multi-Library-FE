@@ -85,6 +85,9 @@ if(!navItemRank.contains(e.target))navItemRankList.classList.remove('active')
 
 const imgDiv = document.querySelector('.choose-avatar');
 const img    = document.querySelector('#Photo');
+const img1    = document.querySelector('#Photo1');
+const img2    = document.querySelector('#Photo2');
+const img3    = document.querySelector('#Photo3');
 const file   = document.querySelector('#file');
 const uploadBtn = document.querySelector('#uploadBtn');
 
@@ -97,6 +100,9 @@ file.addEventListener('change',function() {
 
         reader.addEventListener('load',function () {
             img.setAttribute('src',reader.result);
+            img1.setAttribute('src',reader.result);
+            img2.setAttribute('src',reader.result);
+            img3.setAttribute('src',reader.result);
         });
 
         reader.readAsDataURL(choosedFile);
