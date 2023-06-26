@@ -106,6 +106,41 @@ file.addEventListener('change',function() {
         });
 
         reader.readAsDataURL(choosedFile);
+         alert("Thay đổi ảnh đại diện thành công.")
     }
 });
+function login(e){
+    event.preventDefault();
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var email = document.getElementById("email").value;
+    var user = localStorage.getItem(username);
+    var data = JSON.parse(user);
+    if(username==data.username && password==data.password && email==data.email){
+        alert("Đăng nhập thành công")
+        window.location.href="trangchu.html"
+    } else{
+        alert("Đăng nhập thất bại")
+    }
+
+}
+function signup(e){
+    event.preventDefault();
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var email = document.getElementById("email").value;
+    var ConfirmPassword = document.getElementById("ConfirmPassword").value;
+    var user = {
+        ConfirmPassword : ConfirmPassword,
+        username : username,
+        password : password,
+        email : email,
+    }
+    var json = JSON.stringify(user);
+    localStorage.setItem(username, json);
+    alert("Đăng Ký thành công");
+}
+
+
+
 
